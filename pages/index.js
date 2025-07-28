@@ -1,9 +1,12 @@
 import Image from "next/image";
+import HeroSection from "@/components/sections/HeroSection";
+import Navbar from "@/components/sections/navbar";
 
 export default function Home() {
   return (
     <>
-      <h1 className="bg-red-600 text-white">hello words!!!!</h1>
+      <Navbar />
+      <HeroSection />
     </>
   );
 }
