@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ArrowRight, Fullscreen } from 'lucide-react';
 
 export default function HeroSection() {
     return (
@@ -11,9 +12,10 @@ export default function HeroSection() {
                 <div className=" h-20 w-75 rounded-tl-full bg-[#FAF9F6] flex justify-center items-center absolute bottom-0 right-0">
                     <Link
                          href="/products"
-                         className=" flex justify-around items-center w-40 h-15 mt-4 text-center text-2xl bg-black text-white font-semibold rounded-full hover:bg-gray-900 transition duration-300 shadow"
+                         className="p-3 flex justify-around items-center w-45 h-15 mt-4 text-center text-2xl bg-black text-white font-semibold rounded-full hover:bg-gray-900 transition duration-300 shadow"
                         >
                             Products
+                            <ArrowRight size={28}/>
                     </Link>
                 </div>
                 <div></div>
