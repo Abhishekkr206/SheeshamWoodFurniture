@@ -25,13 +25,13 @@ export default function AboutSection(){
                 </div>
 
 
-                <div className=" absolute bg-[#FAF9F6] rounded-bl-4xl h-70 w-60 right-0 top-0 flex justify-center items-center">
+                <div className=" absolute bg-[#FAF9F6] rounded-bl-4xl h-70 w-60 right-0 top-0 flex justify-center items-center ">
                     {/* chair img */}
-                    <Image src="/images/AboutImg1.png" alt="About section mandir image" width={300} height={400} />                
+                    <Image src="/images/AboutImg1.png" alt="About section mandir image" width={300} height={400} className="rotate-10"/>                
                     </div>
-                <div className=" absolute bg-[#FAF9F6] rounded-tr-4xl h-60 w-60 bottom-0 left-0 flex justify-center items-center pb-20">
+                <div className=" absolute bg-[#FAF9F6] rounded-tr-4xl h-70 w-60 bottom-0 left-0 flex justify-center items-center pb-10">
                     {/* chair img */}
-                    <Image src="/images/AboutImg2.png" alt="About section chair image" width={250} height={400} />
+                    <Image src="/images/AboutImg2.png" alt="About section chair image" width={250} height={400} className="rotate-350"/>
                 </div>
             </div>
         </section>
