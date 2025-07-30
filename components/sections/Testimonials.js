@@ -50,7 +50,7 @@ export default function App() {
 
   return (
     // Main container with a light theme background
-    <div className="antialiased bg-slate-50 text-slate-800 min-h-[95vh] flex items-center justify-center font-sans">
+    <section className="antialiased bg-[#FAF9F6] text-slate-800 min-h-[95vh] flex items-center justify-center font-sans">
       <div className="w-full max-w-6xl mx-auto p-4 md:p-8">
         {/* Grid layout for the two-column structure */}
         <div className="grid grid-cols-1 md:grid-cols-2 min-h-[600px] md:min-h-[500px] bg-white rounded-2xl shadow-xl overflow-hidden">
@@ -102,6 +102,20 @@ export default function App() {
 
                     {/* Navigation Controls */}
                     <div className="flex items-center justify-between mt-10">
+                        {/* Navigation Dots */}
+                        <div className="flex gap-3">
+                            {testimonials.map((_, index) => (
+                                <button
+                                    key={index}
+                                    onClick={() => setActiveIndex(index)}
+                                    className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                                        activeIndex === index ? 'bg-sky-500 scale-125' : 'bg-slate-300 hover:bg-slate-400'
+                                    }`}
+                                    aria-label={`Go to testimonial ${index + 1}`}
+                                />
+                            ))}
+                        </div>
+                                                
                         {/* Left/Right Arrow Buttons */}
                         <div className="flex gap-2">
                             <button
@@ -120,20 +134,6 @@ export default function App() {
                                 <ChevronRight className="w-5 h-5 text-slate-600" />
                             </button>
                         </div>
-
-                        {/* Navigation Dots */}
-                        <div className="flex gap-3">
-                            {testimonials.map((_, index) => (
-                                <button
-                                    key={index}
-                                    onClick={() => setActiveIndex(index)}
-                                    className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                                        activeIndex === index ? 'bg-sky-500 scale-125' : 'bg-slate-300 hover:bg-slate-400'
-                                    }`}
-                                    aria-label={`Go to testimonial ${index + 1}`}
-                                />
-                            ))}
-                        </div>
                     </div>
                 </div>
             </div>
@@ -150,6 +150,6 @@ export default function App() {
           animation: fade-in 0.5s ease-out forwards;
         }
       `}</style>
-    </div>
+    </section>
   );
 }
