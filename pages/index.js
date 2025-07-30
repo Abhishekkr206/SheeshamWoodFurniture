@@ -5,6 +5,7 @@ import AboutSection from "@/components/sections/AboutSection";
 import FeaturedProducts from "@/components/sections/FeaturedProducts";
 import Gallery from "@/components/sections/Gallery";
 import Testimonials from "@/components/sections/Testimonials";
+import Footer from "@/components/sections/footer";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <FeaturedProducts />
       <Gallery />
       <Testimonials />
+      <Footer/>
     </>
   );
 }
