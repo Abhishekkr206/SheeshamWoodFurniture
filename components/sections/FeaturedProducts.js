@@ -60,16 +60,16 @@ export default function FeaturedProducts() {
     <section className='bg-[#FAF9F6] h-fit w-full flex justify-center items-center p-10'>
         <div className="relative bg-white rounded-3xl my-10 flex flex-col items-center">
           <h1 className="text-7xl font-bold my-6 pb-10 ">Featured Products</h1>
-
+          
+            {/* Buttons */}
             <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[75rem] mt-10'>
-                <button onClick={handlePrev} className="absolute left-10 top-1/2 -translate-y-1/2 z-10 text-3xl px-3 h-15 w-15 bg-black/85 text-white rounded-full">←</button>
-                <button onClick={handleNext} className="absolute right-10 top-1/2 -translate-y-1/2 z-10 text-3xl px-3 h-15 w-15 bg-black/85 text-white rounded-full text-center">→</button>
+                <button onClick={handlePrev} className="absolute left-10 top-1/2 -translate-y-1/2 z-10 text-2xl  h-12 w-12 bg-black/85 text-white rounded-full text-center">←</button>
+                <button onClick={handleNext} className="absolute right-10 top-1/2 -translate-y-1/2 z-10 text-2xl  h-12 w-12 bg-black/85 text-white rounded-full text-center">→</button>
             </div>
 
           {/* Carousel */}
           <div className="relative w-[1000px] overflow-x-clip">
 
-            {/* Buttons */}
 
             {/* Track */}
             <div
