@@ -6,7 +6,7 @@ import { MessageCircle, Facebook, Instagram, Mail } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#4a3728] text-zinc-100 font-sans pt-16">
+    <footer className="bg-[#3c2a1c] text-zinc-100 font-sans pt-16">
       {/* Main footer content */}
       <div className="container mx-auto px-6 lg:px-8">
         <div className="flex flex-wrap justify-between gap-10">
