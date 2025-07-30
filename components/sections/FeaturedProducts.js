@@ -2,11 +2,11 @@ import { useEffect, useRef, useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react'; // Added for button icons
 
 const originalCards = [
-  { id: 1, title: 'Elegant Sheesham Chair', img: '/images/AboutImg1.png' },
-  { id: 2, title: 'Rustic Wooden Bed', img: '/images/AboutImg2.png' },
-  { id: 3, title: 'Modern Coffee Table', img: '/img3.png' },
-  { id: 4, title: 'Classic Dining Set', img: '/img4.png' },
-  { id: 5, title: 'Handcrafted Bookshelf', img: '/img5.png' },
+  { id: 1, title: 'Elegant Sheesham Chair', img: '/images/indexImg/ProductChair.png' },
+  { id: 2, title: 'Rustic Wooden Bed', img: '/images/indexImg/ProductBed.png' },
+  { id: 3, title: 'Modern Coffee Table', img: '/images/indexImg/ProductTable.png' },
+  { id: 4, title: 'Classic Dining Set', img: '/images/indexImg/ProductTvSideboard.png' },
+  { id: 5, title: 'Handcrafted Mandir', img: '/images/indexImg/ProductMandir.png' },
 ];
 
 export default function FeaturedProducts() {
@@ -64,9 +64,9 @@ export default function FeaturedProducts() {
     // Changed: Section background remains a warm off-white
     <section className="bg-[#FAF9F6] h-fit w-full flex justify-center items-center p-4 md:p-10">
       {/* Changed: Container background is now the dark wood color */}
-      <div className="relative bg-[#4a3728] rounded-3xl my-10 py-7 flex flex-col items-center w-full max-w-7xl">
+      <div className="relative bg-[#20160e] rounded-3xl my-10 py-7 flex flex-col items-center w-[85rem]">
         {/* Changed: Heading text is now light to contrast with the dark background */}
-        <h1 className="text-5xl md:text-7xl font-bold my-6 pb-10 text-zinc-100 text-center px-4">
+        <h1 className="text-5xl md:text-7xl my-6 pb-10 text-zinc-100 text-center px-4">
           Featured Products
         </h1>
 
@@ -75,13 +75,13 @@ export default function FeaturedProducts() {
           {/* Changed: Buttons use warm amber accent color and lucide icons */}
           <button
             onClick={handlePrev}
-            className="absolute left-0 md:left-10 top-1/2 -translate-y-1/2 z-30 h-12 w-12 bg-amber-400 text-[#4a3728] rounded-full flex justify-center items-center hover:bg-amber-500 transition-colors shadow-lg"
+            className="absolute left-0 md:left-10 top-1/2 -translate-y-1/2 z-30 h-12 w-12 bg-amber-300 text-[#4a3728] rounded-full flex justify-center items-center hover:bg-amber-400 transition-colors shadow-lg"
           >
             <ChevronLeft size={28} />
           </button>
           <button
             onClick={handleNext}
-            className="absolute right-0 md:right-10 top-1/2 -translate-y-1/2 z-30 h-12 w-12 bg-amber-400 text-[#4a3728] rounded-full flex justify-center items-center hover:bg-amber-500 transition-colors shadow-lg"
+            className="absolute right-0 md:right-10 top-1/2 -translate-y-1/2 z-30 h-12 w-12 bg-amber-300 text-[#4a3728] rounded-full flex justify-center items-center hover:bg-amber-400 transition-colors shadow-lg"
           >
             <ChevronRight size={28} />
           </button>
@@ -100,7 +100,7 @@ export default function FeaturedProducts() {
               <div
                 key={card.id + '-' + i}
                 // Changed: Border color matches the theme
-                className={`w-[320px] border border-[#7a5c48] p-4 h-[450px] flex-shrink-0 transition-all duration-500 ease-in-out rounded-xl relative overflow-hidden ${
+                className={`w-[320px] border border-[#7a5c48] h-[450px] flex-shrink-0 transition-all duration-500 ease-in-out rounded-xl relative overflow-hidden ${
                   i === activeIndex
                     ? 'scale-110 z-20 shadow-2xl'
                     : 'scale-90 opacity-60 z-10'
@@ -112,8 +112,8 @@ export default function FeaturedProducts() {
                   alt={card.title}
                 />
                 {/* Changed: Title overlay uses a thematic, semi-transparent background */}
-                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white text-center font-semibold bg-[#4a3728]/70 backdrop-blur-sm px-4 py-2 rounded-full w-11/12">
-                  {card.title}
+                <div className="absolute bottom-0 text-white text-5xl m-4">
+                  <h3>{card.title}</h3>
                 </div>
               </div>
             ))}
@@ -129,7 +129,7 @@ export default function FeaturedProducts() {
               // Changed: Dot colors match the new theme
               className={`h-3 w-3 rounded-full transition-all duration-300 ${
                 activeIndex === i + realStartIndex || (activeIndex === 1 && i === originalCards.length-1) || (activeIndex === cards.length - 2 && i === 0)
-                  ? 'bg-amber-400 scale-125'
+                  ? 'bg-amber-300 scale-125'
                   : 'bg-[#7a5c48]'
               }`}
             ></button>

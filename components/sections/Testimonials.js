@@ -56,14 +56,14 @@ export default function App() {
         <div className="grid grid-cols-1 md:grid-cols-2 min-h-[600px] md:min-h-[500px] bg-white rounded-2xl shadow-xl overflow-hidden">
           
           {/* Left Side: Title Section */}
-          <div className="relative flex flex-col items-center justify-center p-8 md:p-12 bg-slate-100">
+          <div className="relative flex flex-col items-center justify-center p-8 md:p-12 bg-[#2e2116]">
              <div className="relative z-10 text-center">
-                <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-slate-900">
+                <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-slate-50">
                     What Our
                     <br />
                     Customers Say
                 </h2>
-                <p className="mt-4 text-lg text-slate-600 max-w-xs mx-auto">
+                <p className="mt-4 text-lg text-slate-100 max-w-xs mx-auto">
                     Real stories from real people who have transformed their business with us.
                 </p>
              </div>
