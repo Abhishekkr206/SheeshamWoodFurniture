@@ -7,19 +7,19 @@ const testimonials = [
     quote: "This is hands down the best service I've ever used. The team is incredibly responsive, the platform is intuitive, and it has completely transformed our workflow. I can't recommend it enough to everyone.",
     name: "Sarah Johnson",
     title: "CEO, Innovatech",
-    avatar: "https://placehold.co/100x100/E2E8F0/4A5568?text=SJ",
+    avatar: "",
   },
     {
     quote: "A game-changer for our entire organization. The ROI was almost immediate. The features are powerful yet easy to learn, and the customer support is second to none. Truly a five-star experience.",
     name: "Michael Chen",
     title: "CTO, Quantum Solutions",
-    avatar: "https://placehold.co/100x100/E2E8F0/4A5568?text=MC",
+    avatar: "",
   },
   {
     quote: "I was skeptical at first, but this product exceeded all my expectations. It's reliable, efficient, and has saved us countless hours of manual work. An essential tool for any modern business.",
     name: "Emily Rodriguez",
     title: "Marketing Director, Creative Co.",
-    avatar: "https://placehold.co/100x100/E2E8F0/4A5568?text=ER",
+    avatar: "",
   },
 ];
 
@@ -56,7 +56,7 @@ export default function App() {
         <div className="grid grid-cols-1 md:grid-cols-2 min-h-[600px] md:min-h-[500px] bg-white rounded-2xl shadow-xl overflow-hidden">
           
           {/* Left Side: Title Section */}
-          <div className="relative flex flex-col items-center justify-center p-8 md:p-12 bg-[#2e2116]">
+          <div className="relative flex flex-col items-center justify-center p-8 md:p-12 bg-[#201F1B]">
              <div className="relative z-10 text-center">
                 <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-slate-50">
                     What Our

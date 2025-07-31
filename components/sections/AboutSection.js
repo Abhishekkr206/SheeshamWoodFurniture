@@ -5,19 +5,19 @@ import { ArrowRight } from 'lucide-react';
 export default function AboutSection(){
     return(
         <section className=" bg-[#FAF9F6] h-fit w-full flex justify-center items-center">
-            <div className="relative my-10 p-10 px-65 h-[32rem] w-[85rem] bg-[#b88b61] rounded-3xl ">
+            <div className="relative my-10 p-10 px-65 h-[32rem] w-[85rem] bg-[#201F1B] rounded-3xl ">
                 <div>
-                    <h1 className="text-[#14130F] text-7xl mt-10">
+                    <h1 className="text-[#FFFF] text-7xl mt-10 ">
                         About Us
                     </h1>
-                    <p className="text-xl w-[38rem] mt-7">
+                    <p className="text-xl w-[38rem] mt-7 text-white">
                         We craft handmade wooden furniture built with precision and passion.  
                         Each piece is made from high-quality, sustainable wood designed to last for years.  
                         Our goal is to blend timeless design with everyday comfort — for homes that feel personal.
                     </p>
                     <Link
                          href="/about"
-                         className=" flex justify-around items-center w-45 h-15 mt-7 px-3 text-center text-2xl bg-black text-white rounded-full hover:bg-gray-900 transition duration-300 shadow"
+                         className=" flex justify-around items-center w-41 h-14 mt-7 px-3 text-center text-2xl bg-white text-black rounded-full hover:bg-gray-200 transition duration-300 shadow"
                         >
                             About Us
                             <ArrowRight size={28}/>
