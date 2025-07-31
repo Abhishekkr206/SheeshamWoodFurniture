@@ -6,14 +6,14 @@ import { MessageCircle, Facebook, Instagram, Mail } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#3c2a1c] text-zinc-100 font-sans pt-16">
+    <footer className="bg-[#241B11] text-zinc-100 font-sans pt-16">
       {/* Main footer content */}
       <div className="container mx-auto px-6 lg:px-8">
         <div className="flex flex-wrap justify-between gap-10">
           
           {/* Column 1: Brand and Address */}
           <div className="flex-1 min-w-[280px] mb-6">
-            <h3 className="text-2xl font-semibold text-white border-b border-[#7a5c48] pb-4 mb-6">
+            <h3 className="text-2xl font-semibold text-white border-b border-[#463427] pb-4 mb-6">
               Sheesham Wood Furniture
             </h3>
             <p className="italic text-zinc-300 mb-4 leading-relaxed">
@@ -32,7 +32,7 @@ const Footer = () => {
 
           {/* Column 2: Navigation */}
           <div className="flex-1 min-w-[280px] mb-6">
-            <h3 className="text-2xl font-semibold text-white border-b border-[#7a5c48] pb-4 mb-6">
+            <h3 className="text-2xl font-semibold text-white border-b border-[#463427] pb-4 mb-6">
               Navigation
             </h3>
             <ul className="space-y-3">
@@ -40,7 +40,7 @@ const Footer = () => {
               <li><Link href="/about" className="hover:text-amber-300 transition-colors">About</Link></li>
               <li>
                 <Link href="/products" className="hover:text-amber-300 transition-colors">Products</Link>
-                <ul className="pl-5 mt-3 space-y-2 border-l border-[#7a5c48] text-sm">
+                <ul className="pl-5 mt-3 space-y-2 border-l border-[#463427] text-sm">
                   <li><Link href="/products/beds" className="hover:text-amber-300 transition-colors">Beds</Link></li>
                   <li><Link href="/products/chairs" className="hover:text-amber-300 transition-colors">Chairs</Link></li>
                   <li><Link href="/products/tables" className="hover:text-amber-300 transition-colors">Tables</Link></li>
@@ -54,7 +54,7 @@ const Footer = () => {
 
           {/* Column 3: Connect With Us (with icons) */}
           <div className="flex-1 min-w-[280px] mb-6">
-            <h3 className="text-2xl font-semibold text-white border-b border-[#7a5c48] pb-4 mb-6">
+            <h3 className="text-2xl font-semibold text-white border-b border-[#463427] pb-4 mb-6">
               Connect With Us
             </h3>
             <ul className="space-y-4">
@@ -89,7 +89,7 @@ const Footer = () => {
       </div>
 
       {/* Footer Bottom Bar */}
-      <div className="mt-10 py-5 border-t border-[#7a5c48] bg-black/10">
+      <div className="mt-10 py-5 border-t border-[#463427] bg-black/10">
         <div className="container mx-auto px-6 lg:px-8 text-center text-sm text-zinc-300">
           <p>&copy; {new Date().getFullYear()} Sheesham Wood Furniture. All Rights Reserved.</p>
         </div>
