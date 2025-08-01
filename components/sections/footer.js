@@ -1,5 +1,3 @@
-// components/Footer.js
-
 import Link from 'next/link';
 import { MessageCircle, Facebook, Instagram, Mail, Phone } from 'lucide-react';
 
