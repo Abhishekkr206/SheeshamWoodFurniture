@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { MessageCircle, Facebook, Instagram, Mail, Phone } from 'lucide-react';
 
-
 const Footer = () => {
   return (
     <footer className="bg-[#241B11] text-zinc-100 font-sans pt-12 md:pt-16">

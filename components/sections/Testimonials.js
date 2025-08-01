@@ -1,7 +1,6 @@
 import React from 'react';
 import { Quote, ChevronLeft, ChevronRight } from 'lucide-react';
 
-// Mock data for a Sheesham furniture website
 const testimonials = [
   {
     quote: "Absolutely in love with the Sheesham wood dining table we bought. The craftsmanship is outstanding, and the rich, natural grain of the wood is just beautiful. It has become the centerpiece of our home. Worth every rupee!",
