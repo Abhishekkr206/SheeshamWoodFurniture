@@ -182,7 +182,7 @@ export default function FeaturedProducts() {
                   className="w-full h-full object-cover rounded-md"
                   alt={card.title}
                 />
-                <div className="absolute bottom-0 text-white text-5xl m-4">
+                <div className="absolute bottom-0 text-white text-4xl sm:text-5xl m-4">
                   <h3>{card.title}</h3>
                 </div>
               </div>

@@ -5,10 +5,10 @@ export default function Contact() {
 
         {/* Section Header */}
         <div className="relative text-center mb-20">
-          <h1 className="text-5xl md:text-6xl font-bold text-[#201F1B] tracking-wide">
+          <h1 className="text-5xl md:text-7xl text-[#201F1B] tracking-wide">
             Contact Us
           </h1>
-          <p className="text-lg text-[#5F5C57] mt-4 max-w-xl mx-auto">
+          <p className="text-lg text-[#5F5C57] mt-4 max-w-xl mx-auto px-2">
             Let’s craft something beautiful together. Reach out for orders, queries, or just to say hi!
           </p>
           <div className="mt-6 w-24 h-[3px] bg-[#A47B5E] mx-auto rounded-full"></div>
@@ -22,7 +22,7 @@ export default function Contact() {
           
           {/* Left Side - Info & Map */}
           <div className="p-8 pt-10 sm:p-10 text-white space-y-8 bg-[#282621]">
-            <h2 className="text-3xl font-semibold">Get in Touch</h2>
+            <h2 className="text-4xl">Get in Touch</h2>
 
             <div className="space-y-4">
               <div>
@@ -55,7 +55,7 @@ export default function Contact() {
 
           {/* Right Side - Form */}
           <div className="sm:p-10 p-8 pt-10 bg-[#1D1C19] text-white flex flex-col justify-center">
-            <h2 className="text-3xl font-semibold mb-6">Send Us a Message</h2>
+            <h2 className="text-4xl mb-6">Send Us a Message</h2>
 
             <form className="space-y-6">
               <input
