@@ -90,7 +90,7 @@ export default function Navbar() {
           {/* Center - Nav Links (Desktop) */}
           <div className="hidden md:flex items-center gap-8 text-gray-700 font-medium">
             <Link href="/about" className="hover:text-black transition">About</Link>
-            <Link href="/products" className="hover:text-black transition">Products</Link>
+            <Link href="/product" className="hover:text-black transition">Product</Link>
             <Link href="/gallery" className="hover:text-black transition">Gallery</Link>
           </div>
 
@@ -174,11 +174,11 @@ export default function Navbar() {
                 About
               </Link>
               <Link 
-                href="/products" 
+                href="/product" 
                 className="block text-lg font-medium text-gray-700 hover:text-black transition-colors py-2"
                 onClick={closeSidebar}
               >
-                Products
+                Product
               </Link>
               <Link 
                 href="/gallery" 

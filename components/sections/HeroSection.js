@@ -11,7 +11,7 @@ export default function HeroSection() {
                 </div>
                 <div className=" h-20 w-55 sm:w-75 rounded-tl-full bg-[#FAF9F6] flex justify-center items-center absolute bottom-0 right-0">
                     <Link
-                         href="/products"
+                         href="/product"
                          className="p-3 flex justify-around items-center w-40 sm:w-45 h-15 ml-7 sm:ml-0 mt-2 sm:mt-4 text-center text-xl sm:text-2xl bg-black text-white rounded-full hover:bg-gray-900 transition duration-300 shadow"
                         >
                             Products
