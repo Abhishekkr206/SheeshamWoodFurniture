@@ -49,7 +49,7 @@ export default function GalleryPage() {
               </div>
 
               {/* Bottom hover overlay */}
-              <div className="absolute bottom-0 left-0 w-full text-white text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4 py-2 flex items-center justify-between">
+              <div className="absolute bottom-0 left-0 w-full text-white text-sm opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-300 px-4 py-2 flex items-center justify-between">
                 <span className="text-2xl w-[80%]">{img.title}</span>
                 <Link
                   href="/#products"

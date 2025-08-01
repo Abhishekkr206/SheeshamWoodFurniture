@@ -7,10 +7,10 @@ export default function AboutSection(){
         <section className=" bg-[#FAF9F6] h-fit w-full flex justify-center items-center  overflow-x-hidden">
             <div className="relative my-10 p-10 md:px-65 h-fit sm:h-[32rem] w-full md:max-w-[85rem] bg-[#201F1B] md:rounded-3xl">
                 <div className="relative z-10">
-                    <h1 className="text-[#FFFF] text-7xl mt-10 ">
+                    <h1 className="text-[#FFFF] text-5xl sm:text-7xl mt-10 ">
                         About Us
                     </h1>
-                    <p className="text-xl sm:max-w-[38rem] mt-7 text-white">
+                    <p className=" text-md sm:text-xl sm:max-w-[38rem] mt-7 text-white">
                         We craft handmade wooden furniture built with precision and passion.  
                         Each piece is made from high-quality, sustainable wood designed to last for years.  
                         Our goal is to blend timeless design with everyday comfort — for homes that feel personal.
@@ -18,7 +18,7 @@ export default function AboutSection(){
                     <div className="w-full flex justify-start items-center">
                         <Link
                              href="/about"
-                             className=" flex justify-around items-center w-41 h-14 mt-7 px-3 text-center text-2xl bg-white text-black rounded-full hover:bg-gray-200 transition duration-300 shadow"
+                             className=" flex justify-around items-center w-38 sm:w-41 h-14 mt-7 px-3 text-center text-xl sm:text-2xl bg-white text-black rounded-full hover:bg-gray-200 transition duration-300 shadow"
                             >
                                 About Us
                                 <ArrowRight size={28}/>

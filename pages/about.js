@@ -79,7 +79,7 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-20 items-center">
             <div>
-              <h2 className="text-4xl md:text-6xl font-extralight mb-8 leading-tight">
+              <h2 className="text-4xl md:text-6xl mb-8 leading-tight">
                 Our Promise
               </h2>
               <div className="w-24 h-px bg-amber-600 mb-8"></div>
@@ -104,7 +104,6 @@ export default function AboutPage() {
                   className="object-cover"
                 />
               </div>
-              <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-amber-100 -z-10 rounded-sm"></div>
             </div>
           </div>
         </div>
@@ -114,7 +113,7 @@ export default function AboutPage() {
       <section className="py-32 bg-stone-100">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-6xl font-extralight mb-6">How We Build</h2>
+            <h2 className="text-4xl md:text-6xl mb-6">How We Build</h2>
             <div className="w-24 h-px bg-amber-600 mx-auto mb-8"></div>
             <p className="text-xl text-stone-600 max-w-3xl mx-auto leading-relaxed">
               Quality is in every step, from the raw wood to the final polish.

@@ -65,12 +65,12 @@ export default function App() {
     <section className="antialiased bg-[#FAF9F6] text-slate-800 min-h-screen flex items-center justify-center font-sans">
       <div className="w-full max-w-6xl mx-auto p-2 sm:p-4 md:p-8">
         {/* Grid layout for the two-column structure. */}
-        <div className="grid grid-cols-1 md:grid-cols-2 md:min-h-[500px] bg-white rounded-2xl shadow-xl overflow-hidden">
+        <div className="grid grid-cols-1 md:grid-cols-2 min-h-[610px] bg-white rounded-2xl shadow-xl overflow-hidden">
           
           {/* Left Side: Title Section */}
-          <div className="relative flex flex-col items-center justify-center p-8 md:p-12 bg-[#201F1B]">
+          <div className="relative flex flex-col h-fit items-center justify-center p-12 bg-[#201F1B]">
             <div className="relative z-10 text-center">
-              <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-slate-50">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-slate-50">
                 Words from Our
                 <br />
                 Happy Customers
@@ -88,7 +88,7 @@ export default function App() {
 
                 {/* Testimonial Content */}
                 <div className="relative">
-                  <p key={activeIndex} className="text-lg md:text-xl font-medium text-slate-700 leading-relaxed animate-fade-in">
+                  <p key={activeIndex} className="text-md sm:text-xl font-medium text-slate-700 leading-relaxed animate-fade-in">
                     "{activeTestimonial.quote}"
                   </p>
                 </div>
@@ -98,14 +98,14 @@ export default function App() {
               <div className="mt-8">
                 <div className="flex items-center gap-4">
                   {/* Avatar with Initials */}
-                  <div className="w-14 h-14 rounded-full bg-slate-200 flex items-center justify-center border-2 border-slate-300">
+                  <div className="sm:w-14 w-12 h-12 sm:h-14 rounded-full bg-slate-200 flex items-center justify-center border-2 border-slate-300">
                     <span className="text-lg font-bold text-slate-600">
                       {getInitials(activeTestimonial.name)}
                     </span>
                   </div>
                   <div>
-                    <p className="text-lg font-semibold text-slate-900">{activeTestimonial.name}</p>
-                    <p className="text-md text-slate-500">{activeTestimonial.title}</p>
+                    <p className="text-md sm:text-lg font-semibold text-slate-900">{activeTestimonial.name}</p>
+                    <p className="text-sm sm:text-md text-slate-500">{activeTestimonial.title}</p>
                   </div>
                 </div>
 
