@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Sheesham Wood Queen Bed",
+    "image": "/images/bed1.jpg",
+    "brand": "Woodsworth",
+    "rating": "4.5",
+    "price": "29999"
+  },
+  {
+    "name": "Queen Bed With Storage",
+    "image": "/images/hero.png",
+    "brand": "UrbanWood",
+    "rating": "4.2",
+    "price": "000"
+  }
+]
