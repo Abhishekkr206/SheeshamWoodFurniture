@@ -123,7 +123,7 @@ export default function FeaturedProducts() {
   return (
     <section className="bg-[#FAF9F6] h-fit w-full flex justify-center items-center sm:p-4 md:p-10">
       <div 
-        className="relative bg-[#20160e] sm:rounded-3xl my-10 py-12 flex flex-col items-center w-full md:w-[85rem]"
+        className="relative bg-[#20160e] sm:rounded-3xl my-10 py-12 flex flex-col items-center w-full md:max-w-[85rem]"
         onMouseEnter={() => {
           setIsHovered(true);
           clearInterval(autoScrollInterval.current);
