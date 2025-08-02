@@ -36,11 +36,11 @@ const Footer = () => {
               <li><Link href="/" className="hover:text-amber-300 transition-colors">Home</Link></li>
               <li><Link href="/about" className="hover:text-amber-300 transition-colors">About</Link></li>
               <li>
-                <Link href="/products" className="hover:text-amber-300 transition-colors">Products</Link>
+                <Link href="/product" className="hover:text-amber-300 transition-colors">Product</Link>
                 <ul className="pl-5 mt-3 space-y-2 border-l border-[#463427] text-sm">
-                  <li><Link href="/products/beds" className="hover:text-amber-300 transition-colors">Beds</Link></li>
-                  <li><Link href="/products/chairs" className="hover:text-amber-300 transition-colors">Chairs</Link></li>
-                  <li><Link href="/products/tables" className="hover:text-amber-300 transition-colors">Tables</Link></li>
+                  <li><Link href="/product/bed" className="hover:text-amber-300 transition-colors">Beds</Link></li>
+                  <li><Link href="/product/chair" className="hover:text-amber-300 transition-colors">Chairs</Link></li>
+                  <li><Link href="/product/table" className="hover:text-amber-300 transition-colors">Tables</Link></li>
                 </ul>
               </li>
               <li><Link href="/gallery" className="hover:text-amber-300 transition-colors">Gallery</Link></li>

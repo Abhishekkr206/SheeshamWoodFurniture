@@ -67,7 +67,7 @@ export default function App() {
         <div className="grid grid-cols-1 md:grid-cols-2 min-h-[610px] bg-white rounded-2xl shadow-xl overflow-hidden">
           
           {/* Left Side: Title Section */}
-          <div className="relative flex flex-col h-fit items-center justify-center p-12 bg-[#201F1B]">
+          <div className="relative flex flex-col items-center justify-center p-12 bg-[#201F1B]">
             <div className="relative z-10 text-center">
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-slate-50">
                 Words from Our
