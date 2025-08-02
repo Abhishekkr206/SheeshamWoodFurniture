@@ -119,14 +119,14 @@ export default function Navbar() {
       {/* Mobile Sidebar Overlay */}
       {isSidebarOpen && (
         <div
-          className="fixed inset-0 bg-opacity-50 z-40 md:hidden"
+          className="fixed inset-0 bg-opacity-50 z-40 md:hidden bg-black/30 "
           onClick={closeSidebar}
         />
       )}
 
       {/* Mobile Sidebar */}
       <div
-        className={`fixed top-0 right-0 h-full w-65 bg-white shadow-2xl z-50 transform transition-transform duration-300 ease-in-out md:hidden ${
+        className={`fixed top-0 right-0 h-full w-65 sm:w-90 bg-white shadow-2xl z-50 transform transition-transform duration-300 ease-in-out md:hidden ${
           isSidebarOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >

@@ -51,7 +51,7 @@ export default function Product() {
 
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Header Section */}
-        <div className="text-center mb-20">
+        <div className="flex flex-col justify-center items-center text-center mb-20">
           <div className="inline-block mb-4">
             <span className="px-6 py-2 bg-gradient-to-r from-[#8B4513] to-[#A0522D] text-white text-sm rounded-full shadow-lg">
               Premium Wood Collection
@@ -62,7 +62,7 @@ export default function Product() {
             <br />
             <span className="italic text-4xl md:text-7xl font-light">Perfection</span>
           </h2>
-          <p className="text-md sm:text-xl text-[#5A5954] max-w-2xl leading-relaxed">
+          <p className="text-md sm:text-xl text-[#5A5954] max-w-2xl  leading-relaxed">
             Discover our exclusive collection of handcrafted wooden furniture, where traditional artistry meets contemporary design.
           </p>
         </div>
@@ -76,7 +76,7 @@ export default function Product() {
               className="group cursor-pointer"
             >
               {/* Card Container */}
-              <div className="relative bg-white/80 backdrop-blur-sm rounded-xl sm:rounded-3xl shadow-lg sm:shadow-xl hover:shadow-2xl transition-all duration-700 overflow-hidden border border-white/20 hover:border-[#8B4513]/20">
+              <div className="relative bg-white/80 sm:min-h-[470px] md:min-h-[535px] rounded-xl sm:rounded-3xl shadow-lg sm:shadow-xl hover:shadow-2xl transition-all duration-700 overflow-hidden border border-white/20 hover:border-[#8B4513]/20">
 
                 {/* Image Container */}
                 <div className="relative w-full h-48 sm:h-64 md:h-72 lg:h-75 overflow-hidden rounded-t-xl sm:rounded-t-3xl">
