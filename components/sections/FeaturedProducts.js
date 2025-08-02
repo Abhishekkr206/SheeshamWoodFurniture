@@ -1,5 +1,6 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, useCallback } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import Image from 'next/image';
 
 const originalCards = [
   { id: 1, title: 'Elegant Sheesham Chair', img: '/images/indexImg/ProductChair.png' },
@@ -50,6 +51,27 @@ export default function FeaturedProducts() {
   // Touch handling
   const touchStartX = useRef(null);
 
+  const handleNext = useCallback(() => {
+    if (isTransitioning) return;
+    setIsTransitioning(true);
+    setActiveIndex((prev) => prev + 1);
+  }, [isTransitioning]);
+
+  const handlePrev = useCallback(() => {
+    if (isTransitioning) return;
+    setIsTransitioning(true);
+    setActiveIndex((prev) => prev - 1);
+  }, [isTransitioning]);
+
+  const startAutoScroll = useCallback(() => {
+    clearInterval(autoScrollInterval.current);
+    if (!isHovered) {
+      autoScrollInterval.current = setInterval(() => {
+        handleNext();
+      }, 3000); // Auto-scroll every 3 seconds
+    }
+  }, [isHovered, handleNext]);
+
   const handleTouchStart = (e) => {
     touchStartX.current = e.touches[0].clientX;
     // Stop auto-scroll when user starts interacting
@@ -66,32 +88,11 @@ export default function FeaturedProducts() {
     startAutoScroll();
   };
 
-  const handleNext = () => {
-    if (isTransitioning) return;
-    setIsTransitioning(true);
-    setActiveIndex((prev) => prev + 1);
-  };
-
-  const handlePrev = () => {
-    if (isTransitioning) return;
-    setIsTransitioning(true);
-    setActiveIndex((prev) => prev - 1);
-  };
-
-  const startAutoScroll = () => {
-    clearInterval(autoScrollInterval.current);
-    if (!isHovered) {
-      autoScrollInterval.current = setInterval(() => {
-        handleNext();
-      }, 3000); // Auto-scroll every 3 seconds
-    }
-  };
-
   // Auto-scroll effect
   useEffect(() => {
     startAutoScroll();
     return () => clearInterval(autoScrollInterval.current);
-  }, [isHovered]);
+  }, [startAutoScroll]);
 
   // Handle infinite loop transitions
   useEffect(() => {
@@ -177,8 +178,9 @@ export default function FeaturedProducts() {
                     : 'scale-90 opacity-60 z-10'
                 }`}
               >
-                <img
+                <Image
                   src={card.img}
+                  fill
                   className="w-full h-full object-cover rounded-md"
                   alt={card.title}
                 />

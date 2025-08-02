@@ -1,40 +1,41 @@
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 const productInfo = [
   {
     name: "Artisan Bed",
     description: "Handcrafted sheesham wood bed built for comfort and style with traditional joinery techniques.",
-    image: "./images/indeximg/ProductChair.png",
+    image: "/images/indeximg/ProductChair.png",
     category: "bed"
   },
   {
     name: "Executive Chair",
     description: "Elegant wooden chair with ergonomic support and premium leather upholstery for long hours.",
-    image: "./images/indeximg/ProductBed.png",
+    image: "/images/indeximg/ProductBed.png",
     category: "chair"
   },
   {
     name: "Heritage Table",
     description: "Premium solid wood dining table with hand-carved details, perfect for family gatherings.",
-    image: "./images/indeximg/ProductTable.png",
+    image: "/images/indeximg/ProductTable.png",
     category: "table"
   },
   {
     name: "Royal Bed",
     description: "Luxurious king-size bed with intricate woodwork and plush headboard design.",
-    image: "./images/indeximg/ProductChair.png",
+    image: "/images/indeximg/ProductChair.png",
     category: "bed"
   },
   {
     name: "Designer Chair",
     description: "Contemporary wooden chair combining modern aesthetics with traditional craftsmanship.",
-    image: "./images/indeximg/ProductBed.png",
+    image: "/images/indeximg/ProductBed.png",
     category: "chair"
   },
   {
     name: "Executive Table",
     description: "Sophisticated workspace table crafted from premium teak wood with built-in storage.",
-    image: "./images/indeximg/ProductTable.png",
+    image: "/images/indeximg/ProductTable.png",
     category: "table"
   }
 ];
@@ -83,9 +84,10 @@ export default function Product() {
                   {/* Overlay Gradient */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   
-                  <img
+                  <Image
                     src={item.image}
                     alt={item.name}
+                    fill
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                   />
                   

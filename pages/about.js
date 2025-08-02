@@ -87,7 +87,7 @@ export default function AboutPage() {
                 At Sheesham Wood Furniture, we keep things simple. We use 100% solid wood, and our skilled artisans build each piece by hand with a focus on quality.
               </p>
               <p className="text-lg md:text-xl leading-relaxed text-stone-600 mb-12">
-                No shortcuts, just beautiful furniture that's made to be lived with.
+                No shortcuts, just beautiful furniture that&apos;s made to be lived with.
               </p>
               <div>
                 <h3 className="text-3xl font-light text-amber-700 mb-2">100%</h3>

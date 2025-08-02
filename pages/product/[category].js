@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import ProductData from '../../data/product';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export async function getStaticPaths() {
   const paths = ProductData.map((cat) => ({
@@ -115,9 +116,10 @@ export default function CategoryPage({ category, products }) {
                   {/* Image Container */}
                   <div className="relative overflow-hidden rounded-t-xl cursor-pointer" onClick={() => openImageModal(item.image, item.name)}>
                     <div className="aspect-square w-full">
-                      <img
+                      <Image
                         src={item.image}
                         alt={item.name}
+                        fill
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                       />
                     </div>
@@ -172,7 +174,7 @@ export default function CategoryPage({ category, products }) {
               </div>
               <h3 className="text-2xl font-semibold text-[#2E2B22] mb-2">No Products Found</h3>
               <p className="text-[#5A5954] max-w-md mx-auto">
-                We're currently updating our {category} collection. Please check back soon for new arrivals.
+                We&apos;re currently updating our {category} collection. Please check back soon for new arrivals.
               </p>
             </div>
           )}
@@ -209,9 +211,10 @@ export default function CategoryPage({ category, products }) {
               
               {/* Image Container */}
               <div className="relative w-full h-full flex items-center justify-center">
-                <img
+                <Image
                   src={selectedImage.url}
                   alt={selectedImage.name}
+                  fill
                   className="max-w-[calc(100vw-2rem)] max-h-[calc(100vh-2rem)] object-contain rounded-lg shadow-2xl"
                   onClick={(e) => e.stopPropagation()}
                 />
