@@ -171,7 +171,7 @@ export default function FeaturedProducts() {
           >
             {cards.map((card, i) => (
               <div
-                key={card.id + '-' + i}
+                key={card.id}
                 className={` border border-[#7a5c48] w-[280px] h-[410px] sm:w-[320px] sm:h-[450px] flex-shrink-0 transition-all duration-500 ease-in-out rounded-xl relative overflow-hidden ${
                   i === activeIndex
                     ? 'scale-110 z-20 shadow-2xl'
