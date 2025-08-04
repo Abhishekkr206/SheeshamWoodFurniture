@@ -30,7 +30,7 @@ const ProductData = [
         "name": "Dining Chair",
         "description": "Elegant solid wood dining chair with curved back support and smooth polish.",
         "price": 3499,
-        "image": "/images/indeximg/productChair.png",
+        "image": "/images/indeximg/ProductChair.png",
         "alt": "Polished Sheesham dining chair",
         "featured": true
       },

@@ -3,11 +3,11 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
 
 const originalCards = [
-  { id: 1, title: 'Elegant Sheesham Chair', img: "/images/indexImg/ProductChair.png" },
-  { id: 2, title: 'Rustic Wooden Bed', img: "/images/indexImg/ProductBed.png" },
-  { id: 3, title: 'Modern Coffee Table', img: "/images/indexImg/ProductTable.png" },
-  { id: 4, title: 'Classic Dining Set', img: "/images/indexImg/ProductTvSideboard.png" },
-  { id: 5, title: 'Handcrafted Mandir', img: "/images/indexImg/ProductMandir.png" },
+  { id: 1, title: 'Elegant Sheesham Chair', img: "/images/indeximg/ProductChair.png" },
+  { id: 2, title: 'Rustic Wooden Bed', img: "/images/indeximg/ProductBed.png" },
+  { id: 3, title: 'Modern Coffee Table', img: "/images/indeximg/ProductTable.png" },
+  { id: 4, title: 'Classic Dining Set', img: "/images/indeximg/ProductTvSideboard.png" },
+  { id: 5, title: 'Handcrafted Mandir', img: "/images/indeximg/ProductMandir.png" },
 ];
 
 export default function FeaturedProducts() {
