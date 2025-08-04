@@ -178,6 +178,7 @@ export default function FeaturedProducts() {
                     : 'scale-90 opacity-60 z-10'
                 }`}
               >
+                
                 <Image
                   src={card.img}
                   fill
