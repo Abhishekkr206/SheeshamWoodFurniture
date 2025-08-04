@@ -17,12 +17,18 @@ const Footer = () => {
             </p>
             {/* UPDATED: The phone number has been added back to the address section. */}
             <address className="not-italic leading-relaxed">
-              123 Woodcraft Lane,
+              Showroom Kalyanpur Sub Post Office
               <br />
-              Furniture City, FC 12345
+              G 4 Shop
+              White House Ring Road By Pass Kalyanpur, Lucknow
+              U.P. - 220022
               <br />
-              <a href="tel:+919876543210" className="mt-2 inline-block hover:text-amber-300 hover:underline transition-colors">
-                +91 98765 43210
+              <a href="tel:+919310977715" className="mt-4 inline-block hover:text-amber-300 hover:underline transition-colors">
+                +91 93109 77715
+              </a>
+              <br/>
+              <a href="tel:+919910231870" className=" inline-block hover:text-amber-300 hover:underline transition-colors">
+                +91 99102 31870
               </a>
             </address>
           </div>

@@ -27,17 +27,23 @@ export default function Contact() {
             <div className="space-y-4">
               <div>
                 <p className="text-lg font-medium">Address</p>
-                <p className="text-gray-300">123 Sheesham Lane, New Delhi, India</p>
+                <p className="text-gray-300">Showroom Kalyanpur Sub Post Office G 4 Shop White House Ring Road By Pass Kalyanpur, Lucknow U.P. - 220022</p>
               </div>
 
               <div>
                 <p className="text-lg font-medium">Phone</p>
-                <p className="text-gray-300">+91 98765 43210</p>
+                <a href="tel:+919310977715" className="mt-4 inline-block hover:text-amber-300 hover:underline transition-colors">
+                  +91 93109 77715
+                </a>
+                <br/>
+                <a href="tel:+919910231870" className=" inline-block hover:text-amber-300 hover:underline transition-colors">
+                  +91 99102 31870
+                </a>
               </div>
 
               <div>
                 <p className="text-lg font-medium">Email</p>
-                <p className="text-gray-300">support@sheeshamfurni.com</p>
+                <p className="text-gray-300">sheeshamwoodfurniturelko@gmail.com</p>
               </div>
             </div>
 
