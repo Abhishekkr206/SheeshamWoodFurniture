@@ -5,14 +5,38 @@ const productInfo = [
   {
     name: "Artisan Bed",
     description: "Handcrafted sheesham wood bed built for comfort and style with traditional joinery techniques.",
-    image: "/images/indeximg/ProductChair.png",
+    image: "/images/indeximg/ProductBed.png",
     category: "bed"
   },
   {
     name: "Executive Chair",
     description: "Elegant wooden chair with ergonomic support and premium leather upholstery for long hours.",
-    image: "/images/indeximg/ProductBed.png",
+    image: "/images/indeximg/ProductChair.png",
     category: "chair"
+  },
+  {
+    name: "Executive Diningset",
+    description: "Elegant wooden chair with ergonomic support and premium leather upholstery for long hours.",
+    image: "/images/indeximg/ProductDiningset.png",
+    category: "diningset"
+  },
+  {
+    name: "Executive Cup Board",
+    description: "Elegant wooden chair with ergonomic support and premium leather upholstery for long hours.",
+    image: "/images/indeximg/ProductCupboard.png",
+    category: "cupboard"
+  },
+  {
+    name: "Executive Side Board",
+    description: "Elegant wooden chair with ergonomic support and premium leather upholstery for long hours.",
+    image: "/images/indeximg/ProductTvSideboard.png",
+    category: "sideboard"
+  },
+  {
+    name: "Executive Mandir",
+    description: "Elegant wooden chair with ergonomic support and premium leather upholstery for long hours.",
+    image: "/images/indeximg/ProductMandir.png",
+    category: "mandir"
   },
   {
     name: "Heritage Table",
@@ -20,24 +44,6 @@ const productInfo = [
     image: "/images/indeximg/ProductTable.png",
     category: "table"
   },
-  {
-    name: "Royal Bed",
-    description: "Luxurious king-size bed with intricate woodwork and plush headboard design.",
-    image: "/images/indeximg/ProductChair.png",
-    category: "bed"
-  },
-  {
-    name: "Designer Chair",
-    description: "Contemporary wooden chair combining modern aesthetics with traditional craftsmanship.",
-    image: "/images/indeximg/ProductBed.png",
-    category: "chair"
-  },
-  {
-    name: "Executive Table",
-    description: "Sophisticated workspace table crafted from premium teak wood with built-in storage.",
-    image: "/images/indeximg/ProductTable.png",
-    category: "table"
-  }
 ];
 
 export default function Product() {
