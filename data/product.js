@@ -185,92 +185,92 @@ const ProductData = [
       {
         "name": "diningSet",
         "description": "Stylish 4-seater dining set made of solid wood with a smooth polished finish.",
-        "image": "/images/productimg/diningSet.jpg"
+        "image": "/images/productimg/diningset.jpg"
       },
       {
         "name": "diningSet1",
         "description": "Stylish 4-seater dining set made of solid wood with a smooth polished finish.",
-        "image": "/images/productimg/diningSet1.jpg"
+        "image": "/images/productimg/diningset1.jpg"
       },
       {
         "name": "diningSet2",
         "description": "Stylish 4-seater dining set made of solid wood with a smooth polished finish.",
-        "image": "/images/productimg/diningSet2.jpg"
+        "image": "/images/productimg/diningset2.jpg"
       },
       {
         "name": "diningSet3",
         "description": "Stylish 4-seater dining set made of solid wood with a smooth polished finish.",
-        "image": "/images/productimg/diningSet3.jpg"
+        "image": "/images/productimg/diningset3.jpg"
       },
       {
         "name": "diningSet4",
         "description": "Stylish 4-seater dining set made of solid wood with a smooth polished finish.",
-        "image": "/images/productimg/diningSet4.jpg"
+        "image": "/images/productimg/diningset4.jpg"
       },
       {
         "name": "diningSet5",
         "description": "Stylish 4-seater dining set made of solid wood with a smooth polished finish.",
-        "image": "/images/productimg/diningSet5.jpg"
+        "image": "/images/productimg/diningset5.jpg"
       },
       {
         "name": "diningSet6",
         "description": "Stylish 4-seater dining set made of solid wood with a smooth polished finish.",
-        "image": "/images/productimg/diningSet6.jpg"
+        "image": "/images/productimg/diningset6.jpg"
       },
       {
         "name": "diningSet7",
         "description": "Stylish 4-seater dining set made of solid wood with a smooth polished finish.",
-        "image": "/images/productimg/diningSet7.jpg"
+        "image": "/images/productimg/diningset7.jpg"
       },
       {
         "name": "diningSet8",
         "description": "Stylish 4-seater dining set made of solid wood with a smooth polished finish.",
-        "image": "/images/productimg/diningSet8.jpg"
+        "image": "/images/productimg/diningset8.jpg"
       },
       {
         "name": "diningSet9",
         "description": "Stylish 4-seater dining set made of solid wood with a smooth polished finish.",
-        "image": "/images/productimg/diningSet9.jpg"
+        "image": "/images/productimg/diningset9.jpg"
       },
       {
         "name": "diningSet10",
         "description": "Stylish 4-seater dining set made of solid wood with a smooth polished finish.",
-        "image": "/images/productimg/diningSet10.jpg"
+        "image": "/images/productimg/diningset10.jpg"
       },
       {
         "name": "diningSet11",
         "description": "Stylish 4-seater dining set made of solid wood with a smooth polished finish.",
-        "image": "/images/productimg/diningSet11.jpg"
+        "image": "/images/productimg/diningset11.jpg"
       },
       {
         "name": "diningSet12",
         "description": "Stylish 4-seater dining set made of solid wood with a smooth polished finish.",
-        "image": "/images/productimg/diningSet12.jpg"
+        "image": "/images/productimg/diningset12.jpg"
       },
       {
         "name": "diningSet13",
         "description": "Stylish 4-seater dining set made of solid wood with a smooth polished finish.",
-        "image": "/images/productimg/diningSet13.jpg"
+        "image": "/images/productimg/diningset13.jpg"
       },
       {
         "name": "diningSet14",
         "description": "Stylish 4-seater dining set made of solid wood with a smooth polished finish.",
-        "image": "/images/productimg/diningSet14.jpg"
+        "image": "/images/productimg/diningset14.jpg"
       },
       {
         "name": "diningSet15",
         "description": "Stylish 4-seater dining set made of solid wood with a smooth polished finish.",
-        "image": "/images/productimg/diningSet15.jpg"
+        "image": "/images/productimg/diningset15.jpg"
       },
       {
         "name": "diningSet16",
         "description": "Stylish 4-seater dining set made of solid wood with a smooth polished finish.",
-        "image": "/images/productimg/diningSet16.jpg"
+        "image": "/images/productimg/diningset16.jpg"
       },
       {
         "name": "diningSet17",
         "description": "Stylish 4-seater dining set made of solid wood with a smooth polished finish.",
-        "image": "/images/productimg/diningSet17.jpg"
+        "image": "/images/productimg/diningset17.jpg"
       }
     ]
   },
