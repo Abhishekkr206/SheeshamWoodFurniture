@@ -12,9 +12,9 @@ export default function AboutSection(){
                         About Us
                     </h1>
                     <p className=" text-md sm:text-xl sm:max-w-[38rem] mt-7 text-white">
-                        We craft handmade wooden furniture built with precision and passion.  
-                        Each piece is made from high-quality, sustainable wood designed to last for years.  
-                        Our goal is to blend timeless design with everyday comfort — for homes that feel personal.
+                        We make handmade wooden furniture with care and attention to detail.  
+                        Every piece is built using strong, good-quality wood that lasts for years.  
+                        Our aim is to create furniture that looks great and feels just right for your home.
                     </p>
                     <div className="w-full flex justify-start items-center">
                         <Link

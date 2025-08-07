@@ -6,6 +6,7 @@ export default function Navbar() {
   const [showNavbar, setShowNavbar] = useState(true);
   const [isTop, setIsTop] = useState(true);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isProductExpanded, setIsProductExpanded] = useState(false);
   const lastScrollY = useRef(0);
 
   useEffect(() => {
@@ -51,7 +52,21 @@ export default function Navbar() {
 
   const closeSidebar = () => {
     setIsSidebarOpen(false);
+    setIsProductExpanded(false); // Reset product expansion when closing sidebar
   };
+
+  const toggleProductMenu = () => {
+    setIsProductExpanded(!isProductExpanded);
+  };
+
+  const productCategories = [
+    { name: 'Beds', href: '/product/bed' },
+    { name: 'Chairs', href: '/product/chair' },
+    { name: 'Dining Set', href: '/product/diningset' },
+    { name: 'Cup Board', href: '/product/cupboard' },
+    { name: 'Side Board', href: '/product/sideboard' },
+    { name: 'Mandir', href: '/product/mandir' }
+  ];
 
   return (
     <>
@@ -127,7 +142,7 @@ export default function Navbar() {
 
       {/* Mobile Sidebar */}
       <div
-        className={`fixed top-0 right-0 h-full w-65 sm:w-90 bg-white shadow-2xl z-50 transform transition-transform duration-300 ease-in-out md:hidden ${
+        className={`fixed top-0 right-0 h-full w-80 sm:w-96 bg-white shadow-2xl z-50 transform transition-transform duration-300 ease-in-out md:hidden overflow-y-auto ${
           isSidebarOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
@@ -173,6 +188,7 @@ export default function Navbar() {
               >
                 Home
               </Link>
+              
               <Link 
                 href="/about" 
                 className="block text-lg font-medium text-gray-700 hover:text-black transition-colors py-2"
@@ -180,13 +196,54 @@ export default function Navbar() {
               >
                 About
               </Link>
-              <Link 
-                href="/product" 
-                className="block text-lg font-medium text-gray-700 hover:text-black transition-colors py-2"
-                onClick={closeSidebar}
-              >
-                Product
-              </Link>
+              
+              {/* Product with Dropdown */}
+              <div>
+                <div className="flex items-center justify-between">
+                  <Link 
+                    href="/product" 
+                    className="block text-lg font-medium text-gray-700 hover:text-black transition-colors py-2 flex-1"
+                    onClick={closeSidebar}
+                  >
+                    Product
+                  </Link>
+                  <button
+                    onClick={toggleProductMenu}
+                    className="p-2 rounded-full hover:bg-gray-100 transition-colors"
+                    aria-label="Toggle product menu"
+                  >
+                    <svg 
+                      className={`w-5 h-5 text-gray-600 transition-transform duration-200 ${
+                        isProductExpanded ? 'rotate-180' : ''
+                      }`} 
+                      fill="none" 
+                      stroke="currentColor" 
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
+                </div>
+                
+                {/* Product Subcategories */}
+                <div className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                  isProductExpanded ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                }`}>
+                  <div className="pl-4 mt-3 space-y-3 border-l-2 border-amber-200">
+                    {productCategories.map((category, index) => (
+                      <Link
+                        key={index}
+                        href={category.href}
+                        className="block text-base text-gray-600 hover:text-amber-700 transition-colors py-1 pl-3"
+                        onClick={closeSidebar}
+                      >
+                        {category.name}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              
               <Link 
                 href="/gallery" 
                 className="block text-lg font-medium text-gray-700 hover:text-black transition-colors py-2"

@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 
 export default function AboutPage() {
   const [activeSection, setActiveSection] = useState(0);
@@ -18,24 +19,34 @@ export default function AboutPage() {
     {
       title: "Solid Wood",
       description: "We start with the best. Only 100% solid Sheesham and Teak wood, chosen for its strength and grain.",
-      image: "/images/indeximg/ProductChair.png"
+      image: "/images/indeximg/ProductChair.png",
+      category:"chair"
     },
     {
       title: "Handcrafted",
       description: "Our skilled Delhi artisans build every piece by hand, ensuring quality in every joint and curve.",
-      image: "/images/indeximg/ProductBed.png"
+      image: "/images/indeximg/ProductBed.png",
+      category:"bed"
     },
     {
       title: "Lasting Finish",
       description: "Each piece is carefully sanded and finished to protect the wood and highlight its natural beauty.",
-      image: "/images/indeximg/ProductTvSideboard.png"
+      image: "/images/indeximg/Productcupboard.png",
+      category:"cupboard"
     },
     {
       title: "Built to Last",
       description: "We build strong, durable furniture that's ready for everyday life and designed to become a family heirloom.",
-      image: "/images/indeximg/ProductTable.png"
+      image: "/images/indeximg/ProductDiningset.png",
+      category:"diningset"
     }
   ];
+
+    const router = useRouter();
+  
+    const handleClick = (category) => {
+      router.push(`/product/${category}`);
+      };
 
   return (
     <div className="bg-stone-50 text-stone-900">
@@ -96,14 +107,18 @@ export default function AboutPage() {
             </div>
 
             <div className="relative">
-              <div className="aspect-[4/5] relative rounded-sm overflow-hidden shadow-2xl">
-                <Image
-                  src="/images/indeximg/ProductMandir.png"
-                  alt="Handcrafted solid Sheesham wood chair"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+              <Link
+                href="/product/mandir"
+                >
+                <div className="aspect-[4/5] relative rounded-sm overflow-hidden shadow-2xl">
+                  <Image
+                    src="/images/indeximg/ProductMandir.png"
+                    alt="Handcrafted solid Sheesham wood chair"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -124,7 +139,8 @@ export default function AboutPage() {
             {craftPhilosophy.map((item, index) => (
               <div
                 key={index}
-                className={`grid lg:grid-cols-2 gap-16 items-center ${
+                onClick={() => handleClick(item.category)}
+                className={`grid lg:grid-cols-2 gap-16 items-center group cursor-pointer ${
                   index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''
                 }`}
               >
@@ -186,14 +202,18 @@ export default function AboutPage() {
             </div>
 
             <div className="space-y-6">
-              <div className="aspect-[3/2] relative rounded-sm overflow-hidden">
-                <Image
-                  src="/images/indeximg/ProductTable.png"
-                  alt="Close-up on the grain of a solid Teak wood table"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+              <Link
+                href="/product/table"
+                >
+                <div className="aspect-[3/2] relative rounded-sm overflow-hidden">
+                  <Image
+                    src="/images/indeximg/ProductTable.png"
+                    alt="Close-up on the grain of a solid Teak wood table"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -211,7 +231,7 @@ export default function AboutPage() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/products">
+            <Link href="/product">
               <button className="px-8 py-4 bg-stone-900 text-white hover:bg-amber-700 transition-colors duration-300 uppercase text-sm tracking-wide font-medium">
                 Browse Collection
               </button>

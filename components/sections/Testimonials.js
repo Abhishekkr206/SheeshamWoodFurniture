@@ -4,27 +4,27 @@ import { Quote, ChevronLeft, ChevronRight } from "lucide-react";
 const testimonials = [
   {
     quote:
-      "Absolutely in love with the Sheesham wood dining table we bought. The craftsmanship is outstanding, and the rich, natural grain of the wood is just beautiful. It has become the centerpiece of our home. Worth every rupee!",
+      "We recently got a Sheesham wood dining table, and it's just perfect. The wood looks so rich and real—it’s clearly made with care. Everyone who visits our home in Alambagh compliments it!",
     name: "Priya Sharma",
-    title: "Homeowner, Delhi",
+    title: "Homeowner, Alambagh",
   },
   {
     quote:
-      "The entire experience, from browsing the collection to the on-time delivery, was seamless. I purchased a bookshelf, and its quality exceeded my expectations. The natural finish is stunning. Highly recommended!",
+      "I ordered a bookshelf, and I have to say, the whole process was smooth. From checking designs online to getting it delivered in Kanpur, everything was on point. The build is solid and looks amazing.",
     name: "Arjun Menon",
-    title: "Architect, Bengaluru",
+    title: "Architect, Kanpur",
   },
   {
     quote:
-      "I was looking for a statement piece and found the perfect coffee table here. It's not only gorgeous but also incredibly sturdy and well-built. It's a true work of art that will last for generations. My client is thrilled.",
+      "I wanted something eye-catching for my client’s living room and found the perfect coffee table here. It’s strong, elegant, and adds so much character. Really happy with how it turned out.",
     name: "Ananya Deshpande",
-    title: "Interior Designer, Mumbai",
+    title: "Interior Designer, Faizabad",
   },
   {
     quote:
-      "Our new Sheesham wood bed has completely transformed our bedroom, giving it such a warm and rustic feel. The quality is top-notch, and the assembly service was very professional and quick.",
+      "Bought a Sheesham wood bed recently and it changed the entire vibe of our bedroom. It feels warm and cozy now. The team delivered and set it up in no time here in Lucknow. Great experience.",
     name: "Vikram Singh",
-    title: "Software Engineer, Hyderabad",
+    title: "Software Engineer, Lucknow",
   },
 ];
 

@@ -4,47 +4,48 @@ import Image from "next/image";
 const productInfo = [
   {
     name: "Artisan Bed",
-    description: "Handcrafted sheesham wood bed built for comfort and style with traditional joinery techniques.",
+    description: "A strong and stylish Sheesham wood bed, handmade with care for daily comfort and long-lasting use.",
     image: "/images/indeximg/ProductBed.png",
     category: "bed"
   },
   {
     name: "Executive Chair",
-    description: "Elegant wooden chair with ergonomic support and premium leather upholstery for long hours.",
+    description: "Comfortable wooden chair with a sleek design, perfect for work or relaxing at home.",
     image: "/images/indeximg/ProductChair.png",
     category: "chair"
   },
   {
     name: "Executive Diningset",
-    description: "Elegant wooden chair with ergonomic support and premium leather upholstery for long hours.",
+    description: "A well-crafted dining set made from solid wood — ideal for family meals and daily use.",
     image: "/images/indeximg/ProductDiningset.png",
     category: "diningset"
   },
   {
     name: "Executive Cup Board",
-    description: "Elegant wooden chair with ergonomic support and premium leather upholstery for long hours.",
+    description: "Spacious and sturdy wooden cupboard to keep your things organized with style.",
     image: "/images/indeximg/ProductCupboard.png",
     category: "cupboard"
   },
   {
     name: "Executive Side Board",
-    description: "Elegant wooden chair with ergonomic support and premium leather upholstery for long hours.",
+    description: "Smart wooden sideboard for your living or dining space — great for storage and display.",
     image: "/images/indeximg/ProductTvSideboard.png",
     category: "sideboard"
   },
   {
     name: "Executive Mandir",
-    description: "Elegant wooden chair with ergonomic support and premium leather upholstery for long hours.",
+    description: "Beautifully designed wooden mandir to create a peaceful and sacred space at home.",
     image: "/images/indeximg/ProductMandir.png",
     category: "mandir"
   },
   {
     name: "Heritage Table",
-    description: "Premium solid wood dining table with hand-carved details, perfect for family gatherings.",
+    description: "Strong and elegant wooden table with fine detailing — perfect for everyday use or hosting guests.",
     image: "/images/indeximg/ProductTable.png",
     category: "table"
   },
 ];
+
 
 export default function Product() {
   const router = useRouter();

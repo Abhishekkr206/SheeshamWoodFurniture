@@ -49,7 +49,7 @@ export default function Contact() {
 
             <div className="rounded-xl overflow-hidden mt-6">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14009.835897354893!2d77.21672135!3d28.6448007"
+                src="https://www.google.com/maps/place/Shesham+wood+furniture/data=!4m2!3m1!1s0x0:0xf42e69bde623ad30?sa=X&ved=1t:2428&ictx=111"
                 width="100%"
                 height="280"
                 style={{ border: 0 }}

@@ -46,7 +46,9 @@ const Footer = () => {
                 <ul className="pl-5 mt-3 space-y-2 border-l border-[#463427] text-sm">
                   <li><Link href="/product/bed" className="hover:text-amber-300 transition-colors">Beds</Link></li>
                   <li><Link href="/product/chair" className="hover:text-amber-300 transition-colors">Chairs</Link></li>
-                  <li><Link href="/product/table" className="hover:text-amber-300 transition-colors">Tables</Link></li>
+                  <li><Link href="/product/diningset" className="hover:text-amber-300 transition-colors">Dining Set</Link></li>
+                  <li><Link href="/product/cupboard" className="hover:text-amber-300 transition-colors">Cup Board</Link></li>
+                  <li><Link href="/product/sideboard" className="hover:text-amber-300 transition-colors">Side Board</Link></li>
                 </ul>
               </li>
               <li><Link href="/gallery" className="hover:text-amber-300 transition-colors">Gallery</Link></li>
@@ -61,14 +63,14 @@ const Footer = () => {
             </h3>
             <ul className="space-y-4">
               <li>
-                <a href="tel:+919876543210" className="flex items-center gap-3 hover:text-amber-300 transition-colors">
+                <a href="tel:+919310977715" className="flex items-center gap-3 hover:text-amber-300 transition-colors">
                   <Phone size={20} />
                   {/* UPDATED: Simplified text as the number is now back in the address. */}
                   <span>Call Us</span>
                 </a>
               </li>
               <li>
-                <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-amber-300 transition-colors">
+                <a href="https://wa.me/919310977715" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-amber-300 transition-colors">
                   <MessageCircle size={20} />
                   <span>WhatsApp</span>
                 </a>
@@ -86,7 +88,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="mailto:contact@sheeshamwood.com" className="flex items-center gap-3 hover:text-amber-300 transition-colors">
+                <a href="mailto:sheeshamwoodfurniturelko@gmail.com" className="flex items-center gap-3 hover:text-amber-300 transition-colors">
                   <Mail size={20} />
                   <span>Email Us</span>
                 </a>

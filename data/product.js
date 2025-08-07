@@ -1,451 +1,121 @@
 const ProductData = [
-  {
-    "category": "bed",
-    "items": [
-      {
-        "name": "Bed",
-        "description": "Spacious king-size bed made from solid teak wood with carved headboard.",
-        "image": "/images/productimg/bed.jpg"
-      },
-      {
-        "name": "Bed",
-        "description": "Spacious king-size bed made from solid teak wood with carved headboard.",
-        "image": "/images/productimg/bed1.jpg"
-      },
-      {
-        "name": "Bed",
-        "description": "Spacious king-size bed made from solid teak wood with carved headboard.",
-        "image": "/images/productimg/bed2.jpg"
-      },
-      {
-        "name": "Bed",
-        "description": "Spacious king-size bed made from solid teak wood with carved headboard.",
-        "image": "/images/productimg/bed3.jpg"
-      },
-      {
-        "name": "Bed",
-        "description": "Spacious king-size bed made from solid teak wood with carved headboard.",
-        "image": "/images/productimg/bed4.jpg"
-      },
-      {
-        "name": "Bed",
-        "description": "Spacious king-size bed made from solid teak wood with carved headboard.",
-        "image": "/images/productimg/bed5.jpg"
-      },
-      {
-        "name": "Bed",
-        "description": "Spacious king-size bed made from solid teak wood with carved headboard.",
-        "image": "/images/productimg/bed6.jpg"
-      },
-      {
-        "name": "Bed",
-        "description": "Spacious king-size bed made from solid teak wood with carved headboard.",
-        "image": "/images/productimg/bed7.jpg"
-      },
-      {
-        "name": "Bed",
-        "description": "Spacious king-size bed made from solid teak wood with carved headboard.",
-        "image": "/images/productimg/bed8.jpg"
-      },
-      {
-        "name": "Bed",
-        "description": "Spacious king-size bed made from solid teak wood with carved headboard.",
-        "image": "/images/productimg/bed9.jpg"
-      },
-      {
-        "name": "Bed",
-        "description": "Spacious king-size bed made from solid teak wood with carved headboard.",
-        "image": "/images/productimg/bed10.jpg"
-      },
-      {
-        "name": "Bed",
-        "description": "Spacious king-size bed made from solid teak wood with carved headboard.",
-        "image": "/images/productimg/bed11.jpg"
-      },
-      {
-        "name": "Bed",
-        "description": "Spacious king-size bed made from solid teak wood with carved headboard.",
-        "image": "/images/productimg/bed12.jpg"
-      },
-      {
-        "name": "Bed",
-        "description": "Spacious king-size bed made from solid teak wood with carved headboard.",
-        "image": "/images/productimg/bed13.jpg"
-      },
-      {
-        "name": "Bed",
-        "description": "Spacious king-size bed made from solid teak wood with carved headboard.",
-        "image": "/images/productimg/bed14.jpg"
-      },
-      {
-        "name": "Bed",
-        "description": "Spacious king-size bed made from solid teak wood with carved headboard.",
-        "image": "/images/productimg/bed15.jpg"
-      },
-      {
-        "name": "Bed",
-        "description": "Spacious king-size bed made from solid teak wood with carved headboard.",
-        "image": "/images/productimg/bed16.jpg"
-      },
-      {
-        "name": "Bed",
-        "description": "Spacious king-size bed made from solid teak wood with carved headboard.",
-        "image": "/images/productimg/bed17.jpg"
-      },
-      {
-        "name": "Bed",
-        "description": "Spacious king-size bed made from solid teak wood with carved headboard.",
-        "image": "/images/productimg/bed18.jpg"
-      },
-      {
-        "name": "Bed",
-        "description": "Spacious king-size bed made from solid teak wood with carved headboard.",
-        "image": "/images/productimg/bed19.jpg"
-      },
-      {
-        "name": "Bed",
-        "description": "Spacious king-size bed made from solid teak wood with carved headboard.",
-        "image": "/images/productimg/bed20.jpg"
-      }
-    ]
-  },
-  {
-    "category": "chair",
-    "items": [
-      {
-        "name": "Chair",
-        "description": "Elegant solid wood dining chair with curved back support and smooth polish.",
-        "image": "/images/productimg/chair.jpg"
-      },
-      {
-        "name": "chair1",
-        "description": "Elegant solid wood dining chair with curved back support and smooth polish.",
-        "image": "/images/productimg/chair1.jpg"
-      },
-      {
-        "name": "chair2",
-        "description": "Elegant solid wood dining chair with curved back support and smooth polish.",
-        "image": "/images/productimg/chair2.jpg"
-      },
-      {
-        "name": "chair3",
-        "description": "Elegant solid wood dining chair with curved back support and smooth polish.",
-        "image": "/images/productimg/chair3.jpg"
-      },
-      {
-        "name": "chair4",
-        "description": "Elegant solid wood dining chair with curved back support and smooth polish.",
-        "image": "/images/productimg/chair4.jpg"
-      },
-      {
-        "name": "chair5",
-        "description": "Elegant solid wood dining chair with curved back support and smooth polish.",
-        "image": "/images/productimg/chair5.jpg"
-      },
-      {
-        "name": "chair6",
-        "description": "Elegant solid wood dining chair with curved back support and smooth polish.",
-        "image": "/images/productimg/chair6.jpg"
-      },
-      {
-        "name": "chair7",
-        "description": "Elegant solid wood dining chair with curved back support and smooth polish.",
-        "image": "/images/productimg/chair7.jpg"
-      },
-      {
-        "name": "chair8",
-        "description": "Elegant solid wood dining chair with curved back support and smooth polish.",
-        "image": "/images/productimg/chair8.jpg"
-      },
-      {
-        "name": "chair9",
-        "description": "Elegant solid wood dining chair with curved back support and smooth polish.",
-        "image": "/images/productimg/chair9.jpg"
-      },
-      {
-        "name": "chair10",
-        "description": "Elegant solid wood dining chair with curved back support and smooth polish.",
-        "image": "/images/productimg/chair10.jpg"
-      },
-      {
-        "name": "chair11",
-        "description": "Elegant solid wood dining chair with curved back support and smooth polish.",
-        "image": "/images/productimg/chair11.jpg"
-      },
-      {
-        "name": "chair12",
-        "description": "Elegant solid wood dining chair with curved back support and smooth polish.",
-        "image": "/images/productimg/chair12.jpg"
-      }
-    ]
-  },
-  {
-    "category": "diningset",
-    "items": [
-      {
-        "name": "diningSet",
-        "description": "Stylish 4-seater dining set made of solid wood with a smooth polished finish.",
-        "image": "/images/productimg/diningset.jpg"
-      },
-      {
-        "name": "diningSet1",
-        "description": "Stylish 4-seater dining set made of solid wood with a smooth polished finish.",
-        "image": "/images/productimg/diningset1.jpg"
-      },
-      {
-        "name": "diningSet2",
-        "description": "Stylish 4-seater dining set made of solid wood with a smooth polished finish.",
-        "image": "/images/productimg/diningset2.jpg"
-      },
-      {
-        "name": "diningSet3",
-        "description": "Stylish 4-seater dining set made of solid wood with a smooth polished finish.",
-        "image": "/images/productimg/diningset3.jpg"
-      },
-      {
-        "name": "diningSet4",
-        "description": "Stylish 4-seater dining set made of solid wood with a smooth polished finish.",
-        "image": "/images/productimg/diningset4.jpg"
-      },
-      {
-        "name": "diningSet5",
-        "description": "Stylish 4-seater dining set made of solid wood with a smooth polished finish.",
-        "image": "/images/productimg/diningset5.jpg"
-      },
-      {
-        "name": "diningSet6",
-        "description": "Stylish 4-seater dining set made of solid wood with a smooth polished finish.",
-        "image": "/images/productimg/diningset6.jpg"
-      },
-      {
-        "name": "diningSet7",
-        "description": "Stylish 4-seater dining set made of solid wood with a smooth polished finish.",
-        "image": "/images/productimg/diningset7.jpg"
-      },
-      {
-        "name": "diningSet8",
-        "description": "Stylish 4-seater dining set made of solid wood with a smooth polished finish.",
-        "image": "/images/productimg/diningset8.jpg"
-      },
-      {
-        "name": "diningSet9",
-        "description": "Stylish 4-seater dining set made of solid wood with a smooth polished finish.",
-        "image": "/images/productimg/diningset9.jpg"
-      },
-      {
-        "name": "diningSet10",
-        "description": "Stylish 4-seater dining set made of solid wood with a smooth polished finish.",
-        "image": "/images/productimg/diningset10.jpg"
-      },
-      {
-        "name": "diningSet11",
-        "description": "Stylish 4-seater dining set made of solid wood with a smooth polished finish.",
-        "image": "/images/productimg/diningset11.jpg"
-      },
-      {
-        "name": "diningSet12",
-        "description": "Stylish 4-seater dining set made of solid wood with a smooth polished finish.",
-        "image": "/images/productimg/diningset12.jpg"
-      },
-      {
-        "name": "diningSet13",
-        "description": "Stylish 4-seater dining set made of solid wood with a smooth polished finish.",
-        "image": "/images/productimg/diningset13.jpg"
-      },
-      {
-        "name": "diningSet14",
-        "description": "Stylish 4-seater dining set made of solid wood with a smooth polished finish.",
-        "image": "/images/productimg/diningset14.jpg"
-      },
-      {
-        "name": "diningSet15",
-        "description": "Stylish 4-seater dining set made of solid wood with a smooth polished finish.",
-        "image": "/images/productimg/diningset15.jpg"
-      },
-      {
-        "name": "diningSet16",
-        "description": "Stylish 4-seater dining set made of solid wood with a smooth polished finish.",
-        "image": "/images/productimg/diningset16.jpg"
-      },
-      {
-        "name": "diningSet17",
-        "description": "Stylish 4-seater dining set made of solid wood with a smooth polished finish.",
-        "image": "/images/productimg/diningset17.jpg"
-      }
-    ]
-  },
-  {
-    "category": "cupboard",
-    "items": [
-      {
-        "name": "Cupboard",
-        "description": "Spacious wooden cupboard with multiple shelves and smooth-finish doors.",
-        "image": "/images/productimg/sideboard.jpg"
-      },
-      {
-        "name": "Cupboard1",
-        "description": "Spacious wooden cupboard with multiple shelves and smooth-finish doors.",
-        "image": "/images/productimg/sideboard1.jpg"
-      },
-      {
-        "name": "Cupboard2",
-        "description": "Spacious wooden cupboard with multiple shelves and smooth-finish doors.",
-        "image": "/images/productimg/sideboard2.jpg"
-      },
-      {
-        "name": "Cupboard3",
-        "description": "Spacious wooden cupboard with multiple shelves and smooth-finish doors.",
-        "image": "/images/productimg/sideboard3.jpg"
-      },
-      {
-        "name": "Cupboard4",
-        "description": "Spacious wooden cupboard with multiple shelves and smooth-finish doors.",
-        "image": "/images/productimg/sideboard4.jpg"
-      },
-      {
-        "name": "Cupboard5",
-        "description": "Spacious wooden cupboard with multiple shelves and smooth-finish doors.",
-        "image": "/images/productimg/sideboard5.jpg"
-      },
-      {
-        "name": "Cupboard6",
-        "description": "Spacious wooden cupboard with multiple shelves and smooth-finish doors.",
-        "image": "/images/productimg/sideboard6.jpg"
-      },
-      {
-        "name": "Cupboard7",
-        "description": "Spacious wooden cupboard with multiple shelves and smooth-finish doors.",
-        "image": "/images/productimg/sideboard7.jpg"
-      },
-      {
-        "name": "Cupboard8",
-        "description": "Spacious wooden cupboard with multiple shelves and smooth-finish doors.",
-        "image": "/images/productimg/sideboard8.jpg"
-      },
-      {
-        "name": "Cupboard9",
-        "description": "Spacious wooden cupboard with multiple shelves and smooth-finish doors.",
-        "image": "/images/productimg/sideboard9.jpg"
-      },
-      {
-        "name": "Cupboard10",
-        "description": "Spacious wooden cupboard with multiple shelves and smooth-finish doors.",
-        "image": "/images/productimg/sideboard10.jpg"
-      },
-      {
-        "name": "Cupboard11",
-        "description": "Spacious wooden cupboard with multiple shelves and smooth-finish doors.",
-        "image": "/images/productimg/sideboard11.jpg"
-      },
-      {
-        "name": "Cupboard12",
-        "description": "Spacious wooden cupboard with multiple shelves and smooth-finish doors.",
-        "image": "/images/productimg/sideboard12.jpg"
-      },
-      {
-        "name": "Cupboard13",
-        "description": "Spacious wooden cupboard with multiple shelves and smooth-finish doors.",
-        "image": "/images/productimg/sideboard13.jpg"
-      },
-    ]
-  },
-  {
-    "category": "sideboard",
-    "items": [
-      {
-        "name": "sideboard",
-        "description": "Modern wooden sideboard with drawers and cabinets for elegant storage.",
-        "image": "/images/productimg/cupboard.jpg"
-      },
-      {
-        "name": "sideboard1",
-        "description": "Modern wooden sideboard with drawers and cabinets for elegant storage.",
-        "image": "/images/productimg/cupboard1.jpg"
-      },
-      {
-        "name": "sideboard2",
-        "description": "Modern wooden sideboard with drawers and cabinets for elegant storage.",
-        "image": "/images/productimg/cupboard2.jpg"
-      },
-      {
-        "name": "sideboard3",
-        "description": "Modern wooden sideboard with drawers and cabinets for elegant storage.",
-        "image": "/images/productimg/cupboard3.jpg"
-      },
-      {
-        "name": "sideboard4",
-        "description": "Modern wooden sideboard with drawers and cabinets for elegant storage.",
-        "image": "/images/productimg/cupboard4.jpg"
-      },
-      {
-        "name": "sideboard5",
-        "description": "Modern wooden sideboard with drawers and cabinets for elegant storage.",
-        "image": "/images/productimg/cupboard5.jpg"
-      },
-      {
-        "name": "sideboard6",
-        "description": "Modern wooden sideboard with drawers and cabinets for elegant storage.",
-        "image": "/images/productimg/cupboard6.jpg"
-      }
-    ]
-  },
-  {
-    "category": "mandir",
-    "items": [
-      {
-        "name": "mandir",
-        "description": "Beautiful wooden mandir with intricate carvings and spacious design for home worship.",
-        "image": "/images/productimg/mandir.jpg"
-      },
-      {
-        "name": "mandir1",
-        "description": "Beautiful wooden mandir with intricate carvings and spacious design for home worship.",
-        "image": "/images/productimg/mandir1.jpg"
-      },
-      {
-        "name": "mandir2",
-        "description": "Beautiful wooden mandir with intricate carvings and spacious design for home worship.",
-        "image": "/images/productimg/mandir2.jpg"
-      },
-      {
-        "name": "mandir3",
-        "description": "Beautiful wooden mandir with intricate carvings and spacious design for home worship.",
-        "image": "/images/productimg/mandir3.jpg"
-      },
-      {
-        "name": "mandir4",
-        "description": "Beautiful wooden mandir with intricate carvings and spacious design for home worship.",
-        "image": "/images/productimg/mandir4.jpg"
-      },
-      {
-        "name": "mandir5",
-        "description": "Beautiful wooden mandir with intricate carvings and spacious design for home worship.",
-        "image": "/images/productimg/mandir5.jpg"
-      }
-    ]
-  },
-  {
-    "category": "table",
-    "items": [
-      {
-        "name": "Table",
-        "description": "Rustic coffee table made from solid Sheesham wood with matte finish.",
-        "image": "/images/productimg/table.jpg",
-      },
-      {
-        "name": "Table1",
-        "description": "Rustic coffee table made from solid Sheesham wood with matte finish.",
-        "image": "/images/productimg/table1.jpg",
-      },
-      {
-        "name": "Table2",
-        "description": "Rustic coffee table made from solid Sheesham wood with matte finish.",
-        "image": "/images/productimg/table2.jpg",
-      },
-    ]
-  },
+{
+  "category": "bed",
+  "items": [
+    { "name": "Carved King Bed", "image": "/images/productimg/bed.jpg" },
+    { "name": "Canopy Bed White", "image": "/images/productimg/bed1.jpg" },
+    { "name": "Storage Bed Brown", "image": "/images/productimg/bed2.jpg" },
+    { "name": "Bunk Bed Kids", "image": "/images/productimg/bed3.jpg" },
+    { "name": "Drawer Storage Bed", "image": "/images/productimg/bed4.jpg" },
+    { "name": "Traditional Panel Bed", "image": "/images/productimg/bed5.jpg" },
+    { "name": "Classic Carved Bed", "image": "/images/productimg/bed6.jpg" },
+    { "name": "Modern Storage Bed", "image": "/images/productimg/bed7.jpg" },
+    { "name": "Golden Canopy Bed", "image": "/images/productimg/bed8.jpg" },
+    { "name": "Golden Pattern Bed", "image": "/images/productimg/bed9.jpg" },
+    { "name": "Minimalist Wooden Bed", "image": "/images/productimg/bed10.jpg" },
+    { "name": "Classic Storage Bed", "image": "/images/productimg/bed11.jpg" },
+    { "name": "Rustic Wooden Bed", "image": "/images/productimg/bed12.jpg" },
+    { "name": "Sleek Drawer Bed", "image": "/images/productimg/bed13.jpg" },
+    { "name": "Double Drawer Bed", "image": "/images/productimg/bed14.jpg" },
+    { "name": "Dark Panel Bed", "image": "/images/productimg/bed15.jpg" },
+    { "name": "Vintage Canopy Bed", "image": "/images/productimg/bed16.jpg" },
+    { "name": "Ethnic Patchwork Bed", "image": "/images/productimg/bed17.jpg" },
+    { "name": "Compact Storage Bed", "image": "/images/productimg/bed18.jpg" },
+    { "name": "Antique Panel Bed", "image": "/images/productimg/bed19.jpg" },
+    { "name": "Drawer Panel Bed", "image": "/images/productimg/bed20.jpg" }
+  ]
+},
+{
+  "category": "chair",
+  "items": [
+    { "name": "Classic Slat Chair", "image": "/images/productimg/chair.jpg" },
+    { "name": "Jali Back Chair", "image": "/images/productimg/chair1.jpg" },
+    { "name": "Patchwork Chair", "image": "/images/productimg/chair2.jpg" },
+    { "name": "Upholstered Pair", "image": "/images/productimg/chair3.jpg" },
+    { "name": "Wide Slat Chair", "image": "/images/productimg/chair4.jpg" },
+    { "name": "Cushion Seat Chair", "image": "/images/productimg/chair5.jpg" },
+    { "name": "Plain Wooden Chair", "image": "/images/productimg/chair6.jpg" },
+    { "name": "Decorative Slat Pair", "image": "/images/productimg/chair7.jpg" },
+    { "name": "Natural Wood Chair", "image": "/images/productimg/chair8.jpg" },
+    { "name": "Simple Dining Chair", "image": "/images/productimg/chair9.jpg" },
+    { "name": "Slat Chairs", "image": "/images/productimg/chair10.jpg" },
+    { "name": "High Back Chair", "image": "/images/productimg/chair11.jpg" },
+    { "name": "Cushion Seat Chair", "image": "/images/productimg/chair12.jpg" }
+  ]
+},
+{
+  "category": "diningset",
+  "items": [
+    { "name": "6-Seater Simple Set", "image": "/images/productimg/diningset.jpg" },
+    { "name": "Carved Dining Set", "image": "/images/productimg/diningset1.jpg" },
+    { "name": "Compact Cushion Set", "image": "/images/productimg/diningset2.jpg" },
+    { "name": "Minimal 6-Seater", "image": "/images/productimg/diningset3.jpg" },
+    { "name": "Jali 8-Seater", "image": "/images/productimg/diningset4.jpg" },
+    { "name": "Cross-Leg Table Set", "image": "/images/productimg/diningset5.jpg" },
+    { "name": "Rectangular Bench Set", "image": "/images/productimg/diningset6.jpg" },
+    { "name": "Square Dining Set", "image": "/images/productimg/diningset7.jpg" },
+    { "name": "Classic 6-Seater", "image": "/images/productimg/diningset8.jpg" },
+    { "name": "Wide Table Set", "image": "/images/productimg/diningset9.jpg" },
+    { "name": "Tile Top Dining", "image": "/images/productimg/diningset10.jpg" },
+    { "name": "Glass Top Set", "image": "/images/productimg/diningset11.jpg" },
+    { "name": "Heavy Carved Set", "image": "/images/productimg/diningset12.jpg" },
+    { "name": "Simple Dining Set", "image": "/images/productimg/diningset13.jpg" },
+    { "name": "Modern Dining Set", "image": "/images/productimg/diningset14.jpg" },
+    { "name": "Square Tile Set", "image": "/images/productimg/diningset15.jpg" },
+    { "name": "Compact Dining Set", "image": "/images/productimg/diningset16.jpg" },
+    { "name": "Round Back Chairs", "image": "/images/productimg/diningset17.jpg" }
+  ]
+},
+{
+  "category": "cupboard",
+  "items": [
+    { "name": "Plain Double Door", "image": "/images/productimg/sideboard.jpg" },
+    { "name": "Brass Panel Cupboard", "image": "/images/productimg/sideboard1.jpg" },
+    { "name": "Jali Design Cupboard", "image": "/images/productimg/sideboard2.jpg" },
+    { "name": "Upper Glass Doors", "image": "/images/productimg/sideboard3.jpg" },
+    { "name": "Open Shelf Cabinet", "image": "/images/productimg/sideboard4.jpg" },
+    { "name": "Detailed Brass Panel", "image": "/images/productimg/sideboard5.jpg" },
+    { "name": "Full Glass Doors", "image": "/images/productimg/sideboard6.jpg" },
+    { "name": "Glass Panel Cupboard", "image": "/images/productimg/sideboard7.jpg" },
+    { "name": "Tall Glass Cabinet", "image": "/images/productimg/sideboard8.jpg" },
+    { "name": "Corner Shelf Unit", "image": "/images/productimg/sideboard9.jpg" },
+    { "name": "Single Corner Cupboard", "image": "/images/productimg/sideboard10.jpg" },
+    { "name": "Wide Glass Doors", "image": "/images/productimg/sideboard11.jpg" },
+    { "name": "Golden Panel Cupboard", "image": "/images/productimg/sideboard12.jpg" },
+    { "name": "Tall Corner Cabinet", "image": "/images/productimg/sideboard13.jpg" }
+  ]
+},
+ {
+  "category": "sideboard",
+  "items": [
+    { "name": "Basic Two-Door Sideboard", "image": "/images/productimg/cupboard.jpg" },
+    { "name": "Carved Panel Sideboard", "image": "/images/productimg/cupboard1.jpg" },
+    { "name": "Glass Drawer Sideboard", "image": "/images/productimg/cupboard2.jpg" },
+    { "name": "Three-Door Glass Sideboard", "image": "/images/productimg/cupboard3.jpg" },
+    { "name": "Modern Glass Cabinet", "image": "/images/productimg/cupboard4.jpg" },
+    { "name": "Shutter Door Sideboard", "image": "/images/productimg/cupboard5.jpg" },
+    { "name": "Compact Glass Sideboard", "image": "/images/productimg/cupboard6.jpg" }
+  ]
+},
+{
+  "category": "mandir",
+  "items": [
+    { "name": "Square Grid Mandir", "image": "/images/productimg/mandir.jpg" },
+    { "name": "Double Door Mandir", "image": "/images/productimg/mandir1.jpg" },
+    { "name": "Open Pillar Mandir", "image": "/images/productimg/mandir2.jpg" },
+    { "name": "Lattice Door Mandir", "image": "/images/productimg/mandir3.jpg" },
+    { "name": "Twin Arched Mandir", "image": "/images/productimg/mandir4.jpg" },
+    { "name": "Tall Spire Mandir", "image": "/images/productimg/mandir5.jpg" }
+  ]
+},
+{
+  "category": "table",
+  "items": [
+    { "name": "Rectangular Coffee Table", "image": "/images/productimg/table.jpg" },
+    { "name": "Compact Side Table", "image": "/images/productimg/table1.jpg" },
+    { "name": "Storage Drawer Table", "image": "/images/productimg/table2.jpg" }
+  ]
+},
 ]
-
-
 
 export default ProductData;

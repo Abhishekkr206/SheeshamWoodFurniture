@@ -70,6 +70,20 @@ export default function CategoryPage({ category, products }) {
     };
   }, []);
 
+  // Handle escape key to close modal
+  useEffect(() => {
+    const handleEscape = (e) => {
+      if (e.key === 'Escape' && selectedImage) {
+        closeImageModal();
+      }
+    };
+
+    if (selectedImage) {
+      document.addEventListener('keydown', handleEscape);
+      return () => document.removeEventListener('keydown', handleEscape);
+    }
+  }, [selectedImage]);
+
   return (
     <section className="min-h-screen bg-gradient-to-br from-[#FAF9F6] via-[#F8F4EC] to-[#F5F0E8] relative overflow-hidden">
 
@@ -129,7 +143,7 @@ export default function CategoryPage({ category, products }) {
                     
                     {/* Expand Icon */}
                     <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      <div className="bg-white/90 backdrop-blur-sm p-2 rounded-full shadow-lg">
+                      <div className="bg-white/90 p-2 rounded-full shadow-lg">
                         <svg className="w-5 h-5 text-[#8B4513]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 7V5a2 2 0 012-2h2m0 0V1m0 2h2m8 0h2a2 2 0 012 2v2m0 0V1m0 2v2m0 14v2a2 2 0 01-2 2h-2m0 0v2m0-2h-2m-8 0H5a2 2 0 01-2-2v-2m0 0v2m0-2H1" />
                         </svg>
@@ -139,7 +153,7 @@ export default function CategoryPage({ category, products }) {
 
                   {/* Product Info */}
                   <div className="p-4 sm:p-6">
-                    <h3 className="text-lg sm:text-xl font-semibold text-[#1E1D1A] mb-2 group-hover:text-[#8B4513] transition-colors duration-300">
+                    <h3 className="text-lg sm:text-2xl text-center text-[#1E1D1A] mb-2 group-hover:text-[#8B4513] transition-colors duration-300">
                       {item.name}
                     </h3>
                     
@@ -180,50 +194,63 @@ export default function CategoryPage({ category, products }) {
           )}
         </div>
 
-        {/* Image Modal */}
+        {/* Improved Image Modal */}
         {selectedImage && (
           <div 
-            className="fixed bg-black/80 flex items-center justify-center"
+            className="fixed inset-0 bg-black/90 backdrop-blur-sm flex items-center justify-center p-4"
             onClick={closeImageModal}
             style={{ 
-              position: 'fixed', 
-              top: 0, 
-              left: 0, 
-              right: 0, 
-              bottom: 0,
-              width: '100vw',
-              height: '100vh',
-              margin: 0,
               zIndex: 99999 
             }}
           >
-            <div className="relative w-full h-full flex items-center justify-center max-w-none">
+            {/* Modal Container */}
+            <div className="relative w-full h-full max-w-7xl max-h-full flex items-center justify-center">
               {/* Close Button */}
               <button 
                 onClick={closeImageModal}
-                className="absolute top-4 right-4 z-10 bg-white/20 backdrop-blur-sm text-white hover:bg-white/30 transition-all duration-200 rounded-full p-2"
-                style={{ zIndex: 100000 }}
+                className="absolute -top-2 -right-2 z-50 bg-white text-black hover:bg-gray-100 transition-all duration-200 rounded-full p-3 shadow-lg"
+                style={{ zIndex: 100001 }}
+                aria-label="Close modal"
               >
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
               </button>
               
-              {/* Image Container */}
-              <div className="relative w-full h-full flex items-center justify-center">
-                <Image
+              {/* Image Container - Properly centered */}
+              <div 
+                className="relative bg-white rounded-lg shadow-2xl overflow-hidden flex items-center justify-center"
+                onClick={(e) => e.stopPropagation()}
+                style={{
+                  width: 'min(90vw, 90vh)',
+                  height: 'min(90vh, 90vw)',
+                  maxWidth: '800px',
+                  maxHeight: '800px'
+                }}
+              >
+                {/* Using regular img tag as fallback */}
+                <img
                   src={selectedImage.url}
                   alt={selectedImage.name}
-                  fill
-                  className="max-w-[calc(100vw-2rem)] max-h-[calc(100vh-2rem)] object-contain rounded-lg shadow-2xl"
-                  onClick={(e) => e.stopPropagation()}
+                  className="max-w-full max-h-full object-contain rounded-lg"
+                  style={{
+                    width: 'auto',
+                    height: 'auto'
+                  }}
                 />
                 
-                {/* Image Title */}
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-6 rounded-b-lg">
-                  <h3 className="text-white text-4xl text-center">{selectedImage.name}</h3>
+                {/* Image Title Overlay */}
+                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent p-4 sm:p-6">
+                  <h3 className="text-white text-xl sm:text-2xl lg:text-3xl font-semibold text-center break-words">
+                    {selectedImage.name}
+                  </h3>
                 </div>
               </div>
+            </div>
+            
+            {/* Instructions */}
+            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white/80 text-sm text-center">
+              <p>Press ESC or click outside to close</p>
             </div>
           </div>
         )}

@@ -1,13 +1,15 @@
 import { useEffect, useRef, useState, useCallback } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight,ArrowRight } from 'lucide-react';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 const originalCards = [
-  { id: 1, title: 'Elegant Sheesham Chair', img: "/images/indeximg/ProductChair.png" },
-  { id: 2, title: 'Rustic Wooden Bed', img: "/images/indeximg/ProductBed.png" },
-  { id: 3, title: 'Modern Coffee Table', img: "/images/indeximg/ProductTable.png" },
-  { id: 4, title: 'Classic Sideboard', img: "/images/indeximg/ProductTvSideboard.png" },
-  { id: 5, title: 'Handcrafted Mandir', img: "/images/indeximg/ProductMandir.png" },
+  { id: 1, title: 'Elegant Sheesham Chair', img: "/images/indeximg/ProductChair.png", category:"chair" },
+  { id: 2, title: 'Rustic Wooden Bed', img: "/images/indeximg/ProductBed.png", category:"bed" },
+  { id: 3, title: 'Modern Dining Set', img: "/images/indeximg/ProductDiningset.png", category:"diningset" },
+  { id: 4, title: 'Classic Sideboard', img: "/images/indeximg/ProductTvSideboard.png", category:"sideboard" },
+  { id: 5, title: 'Handcrafted Mandir', img: "/images/indeximg/ProductMandir.png", category:"mandir" },
 ];
 
 export default function FeaturedProducts() {
@@ -121,6 +123,12 @@ export default function FeaturedProducts() {
   const totalTranslate =
     (cardWidth + gap) * (activeIndex - Math.floor(visibleCards / 2));
 
+  const router = useRouter();
+
+  const handleClick = (category) => {
+    router.push(`/product/${category}`);
+    };
+
   return (
     <section className="bg-[#FAF9F6] h-fit w-full flex justify-center items-center sm:p-4 md:p-10">
       <div 
@@ -132,10 +140,10 @@ export default function FeaturedProducts() {
         onMouseLeave={() => {
           setIsHovered(false);
         }}
-      >
-        <h1 className="text-5xl md:text-7xl pb-12 text-zinc-100 text-center px-4">
-          Featured Products
-        </h1>
+        >
+          <h1 className="text-5xl md:text-7xl pb-12 text-zinc-100 text-center px-4">
+            Featured Products
+          </h1>
 
         {/* Buttons */}
         <div className="absolute bottom-23 md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 w-full md:max-w-[85rem] md:mt-10">
@@ -162,36 +170,37 @@ export default function FeaturedProducts() {
         </div>
 
         {/* Carousel */}
-        <div className="relative w-full max-w-[1000px] overflow-x-clip">
-          <div
-            className="flex transition-transform duration-500 ease-in-out gap-[20px] touch-pan-y"
-            onTouchStart={handleTouchStart}
-            onTouchEnd={handleTouchEnd}
-            style={{ transform: `translateX(-${totalTranslate}px)` }}
-          >
-            {cards.map((card, i) => (
-              <div
-                key={card.id}
-                className={` border border-[#7a5c48] w-[280px] h-[410px] sm:w-[320px] sm:h-[450px] flex-shrink-0 transition-all duration-500 ease-in-out rounded-xl relative overflow-hidden ${
-                  i === activeIndex
-                    ? 'scale-110 z-20 shadow-2xl'
-                    : 'scale-90 opacity-60 z-10'
-                }`}
-              >
-                
-                <Image
-                  src={card.img}
-                  fill
-                  className="w-full h-full object-cover rounded-md"
-                  alt={card.title}
-                />
-                <div className="absolute bottom-0 text-white text-4xl sm:text-5xl m-4">
-                  <h3>{card.title}</h3>
+          <div className="relative w-full max-w-[1000px] overflow-x-clip">
+            <div
+              className="flex transition-transform duration-500 ease-in-out gap-[20px] touch-pan-y"
+              onTouchStart={handleTouchStart}
+              onTouchEnd={handleTouchEnd}
+              style={{ transform: `translateX(-${totalTranslate}px)` }}
+            >
+              {cards.map((card, i) => (
+                <div
+                  key={card.id}
+                  onClick={() => handleClick(card.category)}
+                  className={`group cursor-pointer border border-[#7a5c48] w-[280px] h-[410px] sm:w-[320px] sm:h-[450px] flex-shrink-0 transition-all duration-500 ease-in-out rounded-xl relative overflow-hidden ${
+                    i === activeIndex
+                      ? 'scale-110 z-20 shadow-2xl'
+                      : 'scale-90 opacity-60 z-10'
+                  }`}
+                >
+
+                  <Image
+                    src={card.img}
+                    fill
+                    className="w-full h-full object-cover rounded-md"
+                    alt={card.title}
+                  />
+                  <div className="absolute bottom-0 text-white text-4xl sm:text-5xl m-4">
+                    <h3>{card.title}</h3>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
 
         {/* Dots */}
         <div className="flex gap-2 md:my-5 pt-25 md:pt-5">
@@ -212,6 +221,13 @@ export default function FeaturedProducts() {
               }`}
             ></button>
           ))}
+          <Link
+               href="/product"
+               className="p-3 absolute right-5 bottom-5 flex justify-around items-center w-40 sm:w-45 h-15 ml-7 sm:ml-0 mt-2 sm:mt-4 text-center text-xl sm:text-2xl bg-white text-black rounded-full hover:bg-gray-200 transition duration-300 shadow"
+              >
+                  Products
+                  <ArrowRight size={22}/>
+          </Link>
         </div>
       </div>
     </section>
