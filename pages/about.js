@@ -31,7 +31,7 @@ export default function AboutPage() {
     {
       title: "Lasting Finish",
       description: "Each piece is carefully sanded and finished to protect the wood and highlight its natural beauty.",
-      image: "/images/indeximg/Productcupboard.png",
+      image: "/images/indeximg/ProductCupboard.png",
       category:"cupboard"
     },
     {
