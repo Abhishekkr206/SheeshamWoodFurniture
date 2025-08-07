@@ -62,23 +62,38 @@ export default function Contact() {
           {/* Right Side - Form */}
           <div className="sm:p-10 p-8 pt-10 bg-[#1D1C19] text-white flex flex-col justify-center">
             <h2 className="text-4xl mb-6">Send Us a Message</h2>
-
-            <form className="space-y-6">
+            
+            <form
+              action="https://formsubmit.co/sheeshamwoodfurniturelko@gmail.com"
+              method="POST"
+              className="space-y-6"
+            >
+              {/* Optional: Protect from spam */}
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="table" />
+            
               <input
                 type="text"
+                name="name"
+                required
                 placeholder="Your Name"
                 className="w-full p-4 rounded-xl bg-[#2C2B27] placeholder:text-gray-400 focus:outline-none"
               />
               <input
                 type="email"
+                name="email"
+                required
                 placeholder="Your Email"
                 className="w-full p-4 rounded-xl bg-[#2C2B27] placeholder:text-gray-400 focus:outline-none"
               />
               <textarea
+                name="message"
+                required
                 placeholder="Your Message"
                 rows={5}
                 className="w-full p-4 rounded-xl bg-[#2C2B27] placeholder:text-gray-400 focus:outline-none"
               ></textarea>
+          
               <button
                 type="submit"
                 className="bg-[#A47B5E] hover:bg-[#926f54] transition rounded-xl px-6 py-3 text-white text-lg font-medium"
@@ -87,6 +102,7 @@ export default function Contact() {
               </button>
             </form>
           </div>
+            
         </div>
       </div>
     </section>

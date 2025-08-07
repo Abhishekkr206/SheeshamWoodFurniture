@@ -65,7 +65,7 @@ export default function AboutPage() {
         <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
           <div className="mb-8">
             <span className="text-sm uppercase tracking-[0.3em] text-stone-300 font-light">
-              Delhi, India
+              lucknow, India
             </span>
           </div>
 
@@ -75,7 +75,7 @@ export default function AboutPage() {
           </h1>
 
           <p className="text-xl md:text-2xl font-light leading-relaxed text-stone-200 max-w-2xl mx-auto">
-            Solid wood furniture. Handcrafted in Delhi. Built to last.
+            Solid wood furniture. Handcrafted in lucknow. Built to last.
           </p>
         </div>
 
