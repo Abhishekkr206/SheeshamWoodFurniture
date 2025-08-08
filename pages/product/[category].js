@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import ProductData from '../../data/product';
 import Link from 'next/link';
 import Image from 'next/image';
+import Head from 'next/head';
+import { Images } from 'lucide-react';
 
 export async function getStaticPaths() {
   const paths = ProductData.map((cat) => ({
@@ -27,13 +29,15 @@ export async function getStaticProps({ params }) {
 
   return {
     props: {
+      description: match.description || null,
+      img: match.image || null,
       category: match.category,
       products: match.items,
     },
   };
 }
 
-export default function CategoryPage({ category, products }) {
+export default function CategoryPage({ category, products, description, img }) {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const openImageModal = (imageUrl, itemName) => {
@@ -85,6 +89,18 @@ export default function CategoryPage({ category, products }) {
   }, [selectedImage]);
 
   return (
+
+    <>
+    <Head>
+      <title>{category} | Sheesham Wood Furniture</title>
+      <meta name="description" content={description || "High-quality sheesham wood product."} />
+      <meta property="og:title" content={`${category} | Sheesham Wood Furniture`} />
+      <meta property="og:description" content={description || "High-quality sheesham wood product."} />
+      <meta property="og:image" content={img || '/images/og-home.png'} />
+      <meta property="og:url" content={`https://sheeshamwoodfurniture.in/product/${category}`} />
+    </Head>
+
+
     <section className="min-h-screen bg-gradient-to-br from-[#FAF9F6] via-[#F8F4EC] to-[#F5F0E8] relative overflow-hidden">
 
       <div className="relative z-10 px-2 py-25 sm:px-6 lg:px-8">
@@ -256,5 +272,6 @@ export default function CategoryPage({ category, products }) {
         )}
       </div>
     </section>
+    </>
   );
 }

@@ -1,5 +1,15 @@
+import Head from "next/head";
+
 export default function Contact() {
   return (
+    <>
+    <Head>
+        <title>Contact Us | Sheesham Wood Furniture</title>
+        <meta name="description" content="Contact Sheesham Wood Furniture for custom orders, bulk enquiries, and support." />
+        <meta name="keywords" content="contact sheesham wood, wooden furniture enquiry, Lucknow furniture contact" />
+        <meta property="og:url" content="https://sheeshamwoodfurniture.in/contact" />
+    </Head>
+
     <section className="bg-[#FAF9F6] py-25 w-full flex justify-center items-center">
       <div className="w-[98%] sm:w-[90%] max-w-[1300px]">
 
@@ -9,7 +19,7 @@ export default function Contact() {
             Contact Us
           </h1>
           <p className="text-lg text-[#5F5C57] mt-4 max-w-xl mx-auto px-2">
-            Let’s craft something beautiful together. Reach out for orders, queries, or just to say hi!
+            Let&apos;s craft something beautiful together. Reach out for orders, queries, or just to say hi!
           </p>
           <div className="mt-6 w-24 h-[3px] bg-[#A47B5E] mx-auto rounded-full"></div>
 
@@ -27,7 +37,7 @@ export default function Contact() {
             <div className="space-y-4">
               <div>
                 <p className="text-lg font-medium">Address</p>
-                <p className="text-gray-300">Showroom Kalyanpur Sub Post Office G 4 Shop White House Ring Road By Pass Kalyanpur, Lucknow U.P. - 220022</p>
+                <p className="text-gray-300">Showroom Kalyanpur Sub Post Office G 4 Shop White House Ring Road By Pass Kalyanpur, Lucknow U.P. - 226022</p>
               </div>
 
               <div>
@@ -49,8 +59,7 @@ export default function Contact() {
 
             <div className="rounded-xl overflow-hidden mt-6">
               <iframe
-                src="https://www.google.com/maps/place/Shesham+wood+furniture/data=!4m2!3m1!1s0x0:0xf42e69bde623ad30?sa=X&ved=1t:2428&ictx=111"
-                width="100%"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.46738134489!2d80.9701851!3d26.8964275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3999570049b5729b%3A0xf42e69bde623ad30!2sWhite%20House%2C%20Adarsh%20Nagar%2C%20Kalyanpur%2C%20Lucknow%2C%20Uttar%20Pradesh%20226022!5e0!3m2!1sen!2sin!4v1691505459246!5m2!1sen!2sin"                width="100%"
                 height="280"
                 style={{ border: 0 }}
                 allowFullScreen=""
@@ -106,5 +115,6 @@ export default function Contact() {
         </div>
       </div>
     </section>
+    </>
   );
 }

@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 export default function AboutPage() {
   const [activeSection, setActiveSection] = useState(0);
@@ -49,6 +50,31 @@ export default function AboutPage() {
       };
 
   return (
+
+    <>
+      <Head>
+        <title>About Us | Sheesham Wood Furniture</title>
+        <meta name="description" content="Sheesham Wood Furniture offers premium handmade wooden furniture in Lucknow. Discover our story and craftsmanship." />
+        <meta name="keywords" content="sheesham wood, wooden furniture, handmade furniture, Lucknow furniture" />
+        <meta name="author" content="Sheesham Wood Furniture" />
+
+        {/* Open Graph Meta Tags for Facebook / LinkedIn */}
+        <meta property="og:title" content="About Us | Sheesham Wood Furniture" />
+        <meta property="og:description" content="Premium handmade wooden furniture crafted with care in Lucknow, India." />
+        <meta property="og:image" content="https://sheeshamwoodfurniture.in/images/og-home.png" />
+        <meta property="og:url" content="https://sheeshamwoodfurniture.in/about" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About Us | Sheesham Wood Furniture" />
+        <meta name="twitter:description" content="Premium handmade wooden furniture crafted with care in Lucknow, India." />
+        <meta name="twitter:image" content="https://sheeshamwoodfurniture.in/images/og-about.png" />
+
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+
     <div className="bg-stone-50 text-stone-900">
 
       {/* Hero Section - Simple & Direct */}
@@ -245,5 +271,6 @@ export default function AboutPage() {
         </div>
       </section>
     </div>
+    </>
   );
 }

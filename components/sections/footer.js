@@ -21,7 +21,7 @@ const Footer = () => {
               <br />
               G 4 Shop
               White House Ring Road By Pass Kalyanpur, Lucknow
-              U.P. - 220022
+              U.P. - 226022
               <br />
               <a href="tel:+919310977715" className="mt-4 inline-block hover:text-amber-300 hover:underline transition-colors">
                 +91 93109 77715

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import { ArrowUpRight, X } from 'lucide-react';
@@ -64,6 +65,13 @@ export default function GalleryPage() {
   }, [selectedImage]);
 
   return (
+    <>
+      <Head>
+        <title>Gallery | Sheesham Wood Furniture</title>
+        <meta name="description" content="Explore our gallery of handcrafted sheesham wood furniture — beds, sofas, tables, and more." />
+        <meta name="keywords" content="sheesham wood furniture gallery, wooden furniture photos, handcrafted furniture images" />
+        <meta property="og:url" content="https://sheeshamwoodfurniture.in/gallery" />
+      </Head>
     <div className="min-h-screen bg-[#FAF9F6] px-4 py-28 text-[#201F1B]">
       <div className="max-w-7xl mx-auto">
         {/* Page Header */}
@@ -144,5 +152,6 @@ export default function GalleryPage() {
         </div>
       )}
     </div>
+    </>
   );
 }

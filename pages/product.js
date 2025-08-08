@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import Image from "next/image";
+import Head from "next/head";
 
 const productInfo = [
   {
@@ -55,6 +56,28 @@ export default function Product() {
   };
 
   return (
+    <>
+      <Head>
+        {/* Basic SEO */}
+        <title>Our Products | Sheesham Wood Furniture</title>
+        <meta name="description" content="Browse our handcrafted Sheesham wood furniture—beds, dining sets, chairs, and more from Lucknow, India." />
+        <meta name="keywords" content="sheesham wood furniture, wooden beds, dining sets, chairs, handcrafted furniture, Lucknow" />
+        <meta name="author" content="Sheesham Wood Furniture" />
+
+        {/* Open Graph for Facebook, LinkedIn */}
+        <meta property="og:title" content="Our Products | Sheesham Wood Furniture" />
+        <meta property="og:description" content="Browse our handcrafted Sheesham wood furniture—beds, dining sets, chairs, and more from Lucknow, India." />
+        <meta property="og:image" content="https://sheeshamwoodfurniture.in/images/og-product.png" />
+        <meta property="og:url" content="https://sheeshamwoodfurniture.in/product" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Our Products | Sheesham Wood Furniture" />
+        <meta name="twitter:description" content="Browse our handcrafted Sheesham wood furniture—beds, dining sets, chairs, and more from Lucknow, India." />
+        <meta name="twitter:image" content="https://sheeshamwoodfurniture.in/images/og-product.png" />
+        </Head>
+
     <section className="w-full min-h-screen bg-gradient-to-br from-[#FBF8F3] via-[#F8F4EC] to-[#F5F0E8] py-24 px-2 sm:px-4 relative overflow-hidden">
 
       <div className="max-w-7xl mx-auto relative z-10">
@@ -148,5 +171,6 @@ export default function Product() {
         </div>
       </div>
     </section>
+    </>
   );
 }
