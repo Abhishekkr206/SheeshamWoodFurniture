@@ -61,7 +61,7 @@ export default function AboutPage() {
         {/* Open Graph Meta Tags for Facebook / LinkedIn */}
         <meta property="og:title" content="About Us | Sheesham Wood Furniture" />
         <meta property="og:description" content="Premium handmade wooden furniture crafted with care in Lucknow, India." />
-        <meta property="og:image" content="https://sheeshamwoodfurniture.in/images/og-home.png" />
+        <meta property="og:image" content="https://sheeshamwoodfurniture.in/images/og-About.png" />
         <meta property="og:url" content="https://sheeshamwoodfurniture.in/about" />
         <meta property="og:type" content="website" />
 
@@ -69,7 +69,7 @@ export default function AboutPage() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="About Us | Sheesham Wood Furniture" />
         <meta name="twitter:description" content="Premium handmade wooden furniture crafted with care in Lucknow, India." />
-        <meta name="twitter:image" content="https://sheeshamwoodfurniture.in/images/og-about.png" />
+        <meta name="twitter:image" content="https://sheeshamwoodfurniture.in/images/ogAbout.png" />
 
         <link rel="icon" href="/favicon.ico" />
       </Head>

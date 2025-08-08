@@ -15,14 +15,14 @@ export default function Home() {
 
         <meta property="og:title" content="Sheesham Wood Furniture | Handmade Furniture" />
         <meta property="og:description" content="Discover beautiful handmade wooden furniture from Lucknow, India." />
-        <meta property="og:image" content="https://sheeshamwoodfurniture.in/images/og-image.jpg" />
+        <meta property="og:image" content="https://sheeshamwoodfurniture.in/images/ogHome.jpg" />
         <meta property="og:url" content="https://sheeshamwoodfurniture.in/" />
         <meta property="og:type" content="website" />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Sheesham Wood Furniture" />
         <meta name="twitter:description" content="Explore our collection of handcrafted wooden furniture from Lucknow." />
-        <meta name="twitter:image" content="https://sheeshamwoodfurniture.in/images/og-home.png" />
+        <meta name="twitter:image" content="https://sheeshamwoodfurniture.in/images/ogHome.png" />
       </Head>
 
       <HeroSection />
