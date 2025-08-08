@@ -15,7 +15,7 @@ export default function Home() {
 
         <meta property="og:title" content="Sheesham Wood Furniture | Handmade Furniture" />
         <meta property="og:description" content="Discover beautiful handmade wooden furniture from Lucknow, India." />
-        <meta property="og:image" content="https://sheeshamwoodfurniture.in/images/ogHome.jpg" />
+        <meta property="og:image" content="https://sheeshamwoodfurniture.in/images/ogHome.png" />
         <meta property="og:url" content="https://sheeshamwoodfurniture.in/" />
         <meta property="og:type" content="website" />
 
