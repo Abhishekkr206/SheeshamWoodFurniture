@@ -2,7 +2,7 @@ const ProductData = [
   {
     "category": "bed",
     "description": "A strong and stylish Sheesham wood bed, handmade with care for daily comfort and long-lasting use.",
-    "image": "/images/indeximg/ProductBed.png",
+    "image": "/images/indeximg/ProductBed.webp",
     "items": [
       { "name": "Carved King Bed", "image": "/images/productimg/bed.jpg" },
       { "name": "Canopy Bed White", "image": "/images/productimg/bed1.jpg" },
@@ -30,7 +30,7 @@ const ProductData = [
   {
     "category": "chair",
     "description": "Comfortable and elegant Sheesham wood chairs designed for every home and office space.",
-    "image": "/images/indeximg/ProductChair.png",
+    "image": "/images/indeximg/ProductChair.webp",
     "items": [
       { "name": "Classic Slat Chair", "image": "/images/productimg/chair.jpg" },
       { "name": "Jali Back Chair", "image": "/images/productimg/chair1.jpg" },
@@ -50,7 +50,7 @@ const ProductData = [
   {
     "category": "diningset",
     "description": "Beautiful Sheesham wood dining sets that combine functionality and traditional craftsmanship.",
-    "image": "/images/indeximg/ProductDiningSet.png",
+    "image": "/images/indeximg/ProductDiningSet.webp",
     "items": [
       { "name": "6-Seater Simple Set", "image": "/images/productimg/diningset.jpg" },
       { "name": "Carved Dining Set", "image": "/images/productimg/diningset1.jpg" },
@@ -75,7 +75,7 @@ const ProductData = [
   {
     "category": "cupboard",
     "description": "Stylish and durable Sheesham wood cupboards crafted to keep your home organized.",
-    "image": "/images/indeximg/ProductCupboard.png",
+    "image": "/images/indeximg/ProductCupboard.webp",
     "items": [
       { "name": "Plain Double Door", "image": "/images/productimg/sideboard.jpg" },
       { "name": "Brass Panel Cupboard", "image": "/images/productimg/sideboard1.jpg" },
@@ -96,7 +96,7 @@ const ProductData = [
   {
     "category": "sideboard",
     "description": "Functional Sheesham wood sideboards with modern and traditional designs.",
-    "image": "/images/indeximg/ProductTvSideboard.png",
+    "image": "/images/indeximg/ProductTvSideboard.webp",
     "items": [
       { "name": "Basic Two-Door Sideboard", "image": "/images/productimg/cupboard.jpg" },
       { "name": "Carved Panel Sideboard", "image": "/images/productimg/cupboard1.jpg" },
@@ -110,7 +110,7 @@ const ProductData = [
   {
     "category": "mandir",
     "description": "Elegant Sheesham wood mandirs designed for spiritual and aesthetic value.",
-    "image": "/images/indeximg/ProductMandir.png",
+    "image": "/images/indeximg/ProductMandir.webp",
     "items": [
       { "name": "Square Grid Mandir", "image": "/images/productimg/mandir.jpg" },
       { "name": "Double Door Mandir", "image": "/images/productimg/mandir1.jpg" },
@@ -123,7 +123,7 @@ const ProductData = [
   {
     "category": "table",
     "description": "Handcrafted Sheesham wood tables perfect for coffee, storage, and decoration.",
-    "image": "/images/indeximg/ProductTable.png",
+    "image": "/images/indeximg/ProductTable.webp",
     "items": [
       { "name": "Rectangular Coffee Table", "image": "/images/productimg/table.jpg" },
       { "name": "Compact Side Table", "image": "/images/productimg/table1.jpg" },

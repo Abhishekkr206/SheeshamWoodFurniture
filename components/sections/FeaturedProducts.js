@@ -5,11 +5,11 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 
 const originalCards = [
-  { id: 1, title: 'Elegant Sheesham Chair', img: "/images/indeximg/ProductChair.png", category:"chair" },
-  { id: 2, title: 'Rustic Wooden Bed', img: "/images/indeximg/ProductBed.png", category:"bed" },
-  { id: 3, title: 'Modern Dining Set', img: "/images/indeximg/ProductDiningset.png", category:"diningset" },
-  { id: 4, title: 'Classic Sideboard', img: "/images/indeximg/ProductTvSideboard.png", category:"sideboard" },
-  { id: 5, title: 'Handcrafted Mandir', img: "/images/indeximg/ProductMandir.png", category:"mandir" },
+  { id: 1, title: 'Elegant Sheesham Chair', img: "/images/indeximg/ProductChair.webp", category:"chair" },
+  { id: 2, title: 'Rustic Wooden Bed', img: "/images/indeximg/ProductBed.webp", category:"bed" },
+  { id: 3, title: 'Modern Dining Set', img: "/images/indeximg/ProductDiningset.webp", category:"diningset" },
+  { id: 4, title: 'Classic Sideboard', img: "/images/indeximg/ProductTvSideboard.webp", category:"sideboard" },
+  { id: 5, title: 'Handcrafted Mandir', img: "/images/indeximg/ProductMandir.webp", category:"mandir" },
 ];
 
 export default function FeaturedProducts() {
@@ -132,7 +132,7 @@ export default function FeaturedProducts() {
   return (
     <section className="bg-[#FAF9F6] h-fit w-full flex justify-center items-center sm:p-4 md:p-10">
       <div 
-        className="relative bg-[#20160e] sm:rounded-3xl my-10 py-12 flex flex-col items-center w-full md:max-w-[85rem]"
+        className="relative bg-[#20160e] sm:rounded-3xl my-10 py-15 sm:py-12 flex flex-col items-center w-full md:max-w-[85rem]"
         onMouseEnter={() => {
           setIsHovered(true);
           clearInterval(autoScrollInterval.current);
@@ -146,7 +146,7 @@ export default function FeaturedProducts() {
           </h1>
 
         {/* Buttons */}
-        <div className="absolute bottom-23 md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 w-full md:max-w-[85rem] md:mt-10">
+        <div className="absolute bottom-27 md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2 w-full md:max-w-[85rem] md:mt-10">
           <button
             onClick={() => {
               handlePrev();
@@ -223,7 +223,7 @@ export default function FeaturedProducts() {
           ))}
           <Link
                href="/product"
-               className="p-3 absolute right-5 bottom-5 flex justify-around items-center w-40 sm:w-45 h-15 ml-7 sm:ml-0 mt-2 sm:mt-4 text-center text-xl sm:text-2xl bg-white text-black rounded-full hover:bg-gray-200 transition duration-300 shadow"
+               className="p-3 absolute right-3 bottom-1 sm:right-5 sm:bottom-5 flex justify-around items-center w-35 sm:w-45 h-15 ml-7 sm:ml-0 mt-2 sm:mt-4 text-center text-xl sm:text-2xl bg-white text-black rounded-full hover:bg-gray-200 transition duration-300 shadow"
               >
                   Products
                   <ArrowRight size={22}/>

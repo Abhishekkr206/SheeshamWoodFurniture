@@ -20,25 +20,25 @@ export default function AboutPage() {
     {
       title: "Solid Wood",
       description: "We start with the best. Only 100% solid Sheesham and Teak wood, chosen for its strength and grain.",
-      image: "/images/indeximg/ProductChair.png",
+      image: "/images/indeximg/ProductChair.webp",
       category:"chair"
     },
     {
       title: "Handcrafted",
       description: "Our skilled Delhi artisans build every piece by hand, ensuring quality in every joint and curve.",
-      image: "/images/indeximg/ProductBed.png",
+      image: "/images/indeximg/ProductBed.webp",
       category:"bed"
     },
     {
       title: "Lasting Finish",
       description: "Each piece is carefully sanded and finished to protect the wood and highlight its natural beauty.",
-      image: "/images/indeximg/ProductCupboard.png",
+      image: "/images/indeximg/ProductCupboard.webp",
       category:"cupboard"
     },
     {
       title: "Built to Last",
       description: "We build strong, durable furniture that's ready for everyday life and designed to become a family heirloom.",
-      image: "/images/indeximg/ProductDiningset.png",
+      image: "/images/indeximg/ProductDiningset.webp",
       category:"diningset"
     }
   ];
@@ -138,7 +138,7 @@ export default function AboutPage() {
                 >
                 <div className="aspect-[4/5] relative rounded-sm overflow-hidden shadow-2xl">
                   <Image
-                    src="/images/indeximg/ProductMandir.png"
+                    src="/images/indeximg/ProductMandir.webp"
                     alt="Handcrafted solid Sheesham wood chair"
                     fill
                     className="object-cover"
@@ -233,7 +233,7 @@ export default function AboutPage() {
                 >
                 <div className="aspect-[3/2] relative rounded-sm overflow-hidden">
                   <Image
-                    src="/images/indeximg/ProductTable.png"
+                    src="/images/indeximg/ProductTable.webp"
                     alt="Close-up on the grain of a solid Teak wood table"
                     fill
                     className="object-cover"

@@ -4,7 +4,7 @@ import { ArrowRight} from 'lucide-react';
 export default function HeroSection() {
     return (
         <section className="bg-[#FAF9F6] h-screen w-full flex justify-center items-center">
-            <div className=" relative p-10 text-white h-full  md:max-h-[42.5rem] lg:min-h-[42.5rem] w-full sm:mx-3 md:rounded-3xl bg-[url('/images/indeximg/heroPhone.png')] md:bg-[url('/images/indeximg/hero.png')] bg-cover bg-center flex justify-center items-center">
+            <div className=" relative p-10 text-white h-full  md:max-h-[42.5rem] lg:min-h-[42.5rem] w-full sm:mx-3 md:rounded-3xl bg-[url('/images/indeximg/heroPhone.webp')] md:bg-[url('/images/indeximg/hero.webp')] bg-cover bg-center flex justify-center items-center">
                 <div className="h-[25rem] w-[45rem] text-center mb-5">
                     <h1 className=" text-7xl sm:text-8xl md:text-9xl">Sheesham</h1>
                     <h4 className="text-3xl font-light">Wood Furniture</h4>

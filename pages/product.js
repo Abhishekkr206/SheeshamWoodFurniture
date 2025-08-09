@@ -6,43 +6,43 @@ const productInfo = [
   {
     name: "Artisan Bed",
     description: "A strong and stylish Sheesham wood bed, handmade with care for daily comfort and long-lasting use.",
-    image: "/images/indeximg/ProductBed.png",
+    image: "/images/indeximg/ProductBed.webp",
     category: "bed"
   },
   {
     name: "Executive Chair",
     description: "Comfortable wooden chair with a sleek design, perfect for work or relaxing at home.",
-    image: "/images/indeximg/ProductChair.png",
+    image: "/images/indeximg/ProductChair.webp",
     category: "chair"
   },
   {
     name: "Executive Diningset",
     description: "A well-crafted dining set made from solid wood — ideal for family meals and daily use.",
-    image: "/images/indeximg/ProductDiningset.png",
+    image: "/images/indeximg/ProductDiningset.webp",
     category: "diningset"
   },
   {
     name: "Executive Cup Board",
     description: "Spacious and sturdy wooden cupboard to keep your things organized with style.",
-    image: "/images/indeximg/ProductCupboard.png",
+    image: "/images/indeximg/ProductCupboard.webp",
     category: "cupboard"
   },
   {
     name: "Executive Side Board",
     description: "Smart wooden sideboard for your living or dining space — great for storage and display.",
-    image: "/images/indeximg/ProductTvSideboard.png",
+    image: "/images/indeximg/ProductTvSideboard.webp",
     category: "sideboard"
   },
   {
     name: "Executive Mandir",
     description: "Beautifully designed wooden mandir to create a peaceful and sacred space at home.",
-    image: "/images/indeximg/ProductMandir.png",
+    image: "/images/indeximg/ProductMandir.webp",
     category: "mandir"
   },
   {
     name: "Heritage Table",
     description: "Strong and elegant wooden table with fine detailing — perfect for everyday use or hosting guests.",
-    image: "/images/indeximg/ProductTable.png",
+    image: "/images/indeximg/ProductTable.webp",
     category: "table"
   },
 ];
